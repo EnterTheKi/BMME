@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMME - Bécsi Magyar Munkás Egyesület</title>
+    <link rel="icon" href="assets/images/BMME-FAV.jpg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -13,13 +14,17 @@
             <button id="hu-btn" class="lang-btn active">HU</button>
             <button id="de-btn" class="lang-btn">DE</button>
         </div>
-        <h1 class="slogan">"Mi egy vérből valók vagyunk"</h1>
+        <div class="title-wrapper" style="display: flex; justify-content: center; align-items: center;">
+            <img src="assets/images/BMME-FAV.jpg" alt="BMME Logo" style="width: 60px; height: auto; margin-right: 15px;">
+            <h1 class="slogan">"Mi egy vérből valók vagyunk"</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#home" class="active">Kezdőlap</a></li>
                 <li><a href="#about">Rólunk</a></li>
-                <li><a href="#events">Események</a></li>
                 <li><a href="#gallery">Galéria</a></li>
+                <li><a href="#events">Események</a></li>
+                <li><a href="#archive">Archívum</a></li>
             </ul>
         </nav>
     </header>
@@ -33,8 +38,8 @@
                 <p>
                     Üdvözöljük a Bécsi Magyar Munkás Egyesület (BMME) honlapján! Ausztria egyik legrégebbi magyar egyesületeként 
                     1899 óta szolgáljuk a bécsi magyar közösséget. 2019-ben ünnepeltük 120. évfordulónkat, és azóta is hűek maradtunk 
-                    küldetésünkhöz: a magyar nyelv, kultúra és hagyományok ápolásához. Jelenleg mintegy 300 aktív tagunk van, akik 
-                    Kancsár Erika és Kancsár László vezetésével havi rendszerességgel 80-90 baráttal találkoznak székházunkban, 
+                    küldetésünkhöz: a magyar nyelv, kultúra és hagyományok ápolásához. Jelenleg mintegy 300 aktív tagunk van, 
+                    akik havi rendszerességgel 80-90 baráttal találkoznak székházunkban, 
                     a Hirschstettnerstrasse 19-ben. Itt, a "magyar házban" otthonra lelhet minden dolgozó ember, aki kikapcsolódásra 
                     vágyik, és a magyar virtust szeretné átélni.
                 </p>
@@ -70,36 +75,32 @@
                 <p>
                     A BMME több mint egy egyesület – egy valódi közösség, ahol a magyar hagyományok és a barátság találkoznak. 
                     Székházunk rendezvényterme ideális helyszín 80-90 fős összejövetelekhez, és rendszerint teltházas eseményeket 
-                    tartunk. Erika és László, valamint egy 6-7 fős csapat fáradhatatlanul dolgozik, hogy minden találkozó felejthetetlen 
+                    tartunk. Egy 6-7 fős csapat fáradhatatlanul dolgozik, hogy minden találkozó felejthetetlen 
                     legyen. Legyen szó gulyásfőző versenyről – ahol a Szolnoki Gulyásfesztiválon harmadik helyet értünk el – vagy egy 
                     nagyszabású Gulaschfestivalról a Donauparkban, nálunk a gasztronómia és a zene mindig kéz a kézben jár. 
                     “Azért csináljuk, mert szeretjük” – vallja Kancsár László, és ez az elhivatottság tartja életben a BMME szellemét.
                 </p>
-                <a href="#events" class="cta-button">Csatlakozzon hozzánk!</a>
+                <a href="assets/pdfs/Belépési nyilatkozat.pdf" download class="cta-button">Tagosodj!</a>
             </section>
 
-            <!-- Events Section -->
-            <section id="events" class="content-section">
-                <h2>Események</h2>
+            <!-- Gallery Section -->
+            <section id="gallery" class="content-section">
+                <h2>Galéria</h2>
                 <p>
-                    2025-ben is izgalmas programokkal várjuk barátainkat! A részvétel tagoknak 35 €, nem tagoknak 40 €, ami egy 
-                    négyfogásos vacsorát és egy üdvözlő italt foglal magában. Jegyeinket érdemes időben lefoglalni, mert gyorsan 
-                    elfogynak!
+                    Tekintse meg képeinket korábbi rendezvényeinkről, ahol a magyar virtus és a közösségi öröm mindig főszerepet kapott!
+                    <a href="https://gulaschfestival.com/gulasch-2024/" target="_blank">További képek a gulyásfesztiválunkról</a>
                 </p>
-                
-                <div class="event-highlight">
-                    <h3>Disznótoros Vacsora – 2025. november 25.</h3>
-                    <p>
-                        November 25-én egy hatalmas disznótoros vacsorával várjuk vendégeinket székházunkban. A Péterrévei Tisza 
-                        Tambura Zenekar szolgáltatja a hangulatot, miközben igazi magyaros ízeket kóstolhatunk meg. Jelentkezni 
-                        Kancsár Lászlónál lehet november 20-ig a +43 699 1909 2536 telefonszámon.
-                    </p>
+                <div class="gallery" style="margin-bottom: 20px;">
+                    <img src="assets/images/bmme1.jpg" alt="BMME 1" class="gallery-img">
+                    <img src="assets/images/bmme2.jpg" alt="BMME 2" class="gallery-img">
+                    <img src="assets/images/bmme3.jpg" alt="BMME 3" class="gallery-img">
+                    <img src="assets/images/bmme4.jpg" alt="BMME 4" class="gallery-img">
                 </div>
-                <p><strong>További 2025-ös programjaink hamarosan!</strong></p>
 
-                <!-- HERO IMAGE ONLY -->
+            
                 <div style="text-align: center;margin-bottom: 30px">
                     <img src="https://gulaschfestival.wordpress.com/wp-content/uploads/2025/10/kolbasztolto_hu.jpg" alt="Bécsi Kolbásztöltő Verseny" style="max-width: 100%;height: auto;border-radius: 8px;box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
+                    <img src="https://gulaschfestival.wordpress.com/wp-content/uploads/2025/10/kolbasztolto_de.jpg" alt="Wiener Wurstfüllwettbewerb" style="max-width: 100%;height: auto;border-radius: 8px;box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
                 </div>
 
                 <!-- HUNGARIAN SECTION -->
@@ -131,7 +132,14 @@
                     </div>
 
                     <p style="text-align: center;margin: 30px 0">
-                        <a href="https://gulaschfestival.com/kolbasztolto" style="display: inline-block;background: #D80000;color: white;padding: 12px 30px;text-decoration: none;border-radius: 5px;font-weight: bold;margin: 10px 5px">Bejelentkezés</a>
+                        <div style="text-align: center;margin: 30px 0">
+                            <p style="margin: 10px 0">
+                                1. <a href="assets/pdfs/Anmelde_FORMULAR_2025.pdf" download style="display: inline-block;background: #D80000;color: white;padding: 12px 30px;text-decoration: none;border-radius: 5px;font-weight: bold;">Bejelentkezés</a>
+                            </p>
+                            <p style="margin: 10px 0">
+                                2. <a href="mailto:bmme1899@outlook.com" style="display: inline-block;background: #005F2F;color: #ffffff;padding: 12px 30px;text-decoration: none;border-radius: 5px;font-weight: bold;border: 2px solid #005F2F;">Küldés: bmme1899@outlook.com</a>
+                            </p>
+                        </div>
                     </p>
 
                     <div style="background: #f9f9f9;padding: 20px;border-radius: 8px;margin: 20px 0;border-left: 5px solid #D80000">
@@ -181,20 +189,40 @@
                         <h3 style="color: #005F2F;text-align: center">Szervezők</h3>
                         <p style="text-align: center;font-size: 1.1em">BMME 1899 | Bundeskanzleramt</p>
                     </div>
+
+                    </section>
+
+            <!-- Events Section -->
+            <section id="events" class="content-section">
+                <h2>Jövőbeli Események</h2>
+               
+                </div>
+                    
+                    
+                    <p>
+                    2025-ben is izgalmas programokkal várjuk barátainkat! A részvétel tagoknak 35 €, nem tagoknak 45 €, ami egy 
+                    négyfogásos vacsorát és egy üdvözlő italt foglal magában. Jegyeinket érdemes időben lefoglalni, mert gyorsan 
+                    elfogynak!
+                </p>
+                
+                <div class="event-highlight">
+                    <h3>Disznótoros Vacsora – 2025. December 6.</h3>
+                    <p>
+                        December 6-án egy hatalmas disznótoros vacsorával várjuk vendégeinket székházunkban. A Péterrévei Tisza 
+                        Tambura Zenekar szolgáltatja a hangulatot, miközben igazi magyaros ízeket kóstolhatunk meg. Jelentkezni 
+                        Kancsár Lászlónál lehet november 20-ig a +43 699 1909 2586 telefonszámon.
+                    </p>
+                    <img src="assets/images/Rendezvenyek2025.jpeg" alt="2025-ös Rendezvények" style="max-width: 100%; height: auto;">
                 </div>
             </section>
 
-            <!-- Gallery Section -->
-            <section id="gallery" class="content-section">
-                <h2>Galéria</h2>
+            <section id="archive" class="content-section">
+                <h2>Archívum</h2>
                 <p>
-                    Tekintse meg képeinket korábbi rendezvényeinkről, ahol a magyar virtus és a közösségi öröm mindig főszerepet kapott!
+                    Fedezze fel korábbi rendezvényeink archív anyagait és emlékeit! Itt találja helyét minden múltbéli eseményünknek.
                 </p>
-                <div class="gallery">
-                    <img src="assets/images/bmme1.jpg" alt="BMME 1" class="gallery-img">
-                    <img src="assets/images/bmme2.jpg" alt="BMME 2" class="gallery-img">
-                    <img src="assets/images/bmme3.jpg" alt="BMME 3" class="gallery-img">
-                    <img src="assets/images/bmme4.jpg" alt="BMME 4" class="gallery-img">
+                <div class="archive">
+                    <p>Archívum tartalom hamarosan...</p>
                 </div>
             </section>
         </section>
@@ -208,7 +236,7 @@
                     Willkommen auf der Website des Wiener Ungarischen Arbeitervereins (BMME)! Als einer der ältesten ungarischen 
                     Vereine Österreichs dienen wir seit 1899 der ungarischen Gemeinschaft in Wien. 2019 feierten wir unser 120-jähriges 
                     Jubiläum und bleiben unserer Mission treu: die Pflege der ungarischen Sprache, Kultur und Traditionen. Mit etwa 
-                    300 aktiven Mitgliedern kommen unter der Leitung von Erika Kancsár und László Kancsár monatlich 80-90 Freunde in 
+                    300 aktiven Mitgliedern kommen monatlich 80-90 Freunde in 
                     unserem Vereinshaus in der Hirschstettnerstrasse 19 zusammen. Hier, im „ungarischen Haus“, finden arbeitende Menschen 
                     Entspannung und erleben ungarische Lebensfreude.
                 </p>
@@ -241,8 +269,7 @@
                 <h2>Über Uns</h2>
                 <p>
                     Der BMME ist mehr als ein Verein – er ist eine echte Gemeinschaft, in der ungarische Traditionen und Freundschaft 
-                    zusammentreffen. Unser Veranstaltungsraum ist ideal für 80-90 Personen und meist ausgebucht. Erika und László sowie 
-                    ein 6-7-köpfiges Team arbeiten unermüdlich, um jede Veranstaltung unvergesslich zu machen. Ob ein Gulaschwettbewerb – 
+                    zusammentreffen. Unser Veranstaltungsraum ist ideal für 80-90 Personen und meist ausgebucht. Ein 6-7-köpfiges Team arbeiten unermüdlich, um jede Veranstaltung unvergesslich zu machen. Ob ein Gulaschwettbewerb – 
                     bei dem wir beim Szolnoker Gulyásfestival den dritten Platz erreichten – oder das große Gulaschfest im Donaupark, 
                     bei uns gehen Gastronomie und Musik Hand in Hand. „Wir machen es, weil wir es lieben“, sagt László Kancsár, und diese 
                     Leidenschaft hält den BMME-Geist am Leben.
@@ -250,27 +277,43 @@
                 <a href="#events" class="cta-button">Schließen Sie sich uns an!</a>
             </section>
 
+            <!-- Gallery Section On Top -->
+            <section id="gallery-de" class="content-section">
+                <h2>Galerie</h2>
+                <p>
+                    Schauen Sie sich Bilder von unseren früheren Veranstaltungen an, bei denen ungarischer Elan und gemeinschaftliche
+                    Freude im Mittelpunkt standen!
+                    <a href="https://gulaschfestival.com/gulasch-2024/" target="_blank">Mehr Bilder vom Gulaschfestival</a>
+                </p>
+                <div class="gallery">
+                    <img src="assets/images/bmme1.jpg" alt="BMME 1" class="gallery-img">
+                    <img src="assets/images/bmme2.jpg" alt="BMME 2" class="gallery-img">
+                    <img src="assets/images/bmme3.jpg" alt="BMME 3" class="gallery-img">
+                    <img src="assets/images/bmme4.jpg" alt="BMME 4" class="gallery-img">
+                </div>
+
+                </section>
+
             <!-- Events Section -->
             <section id="events-de" class="content-section">
                 <h2>Veranstaltungen</h2>
                 <p>
-                    Auch 2025 erwarten unsere Freunde spannende Programme! Die Teilnahme kostet für Mitglieder 35 €, für Nicht-Mitglieder 
-                    40 €, inklusive eines viergängigen Abendessens und eines Begrüßungsgetränks. Tickets sollten frühzeitig reserviert werden, 
+                    Auch 2025 erwarten unsere Freunde spannende Programme! Die Teilnahme kostet für Mitglieder 35 €, für Nicht-Mitglieder
+                    45 €, inklusive eines viergängigen Abendessens und eines Begrüßungsgetränks. Tickets sollten frühzeitig reserviert werden,
                     da sie schnell vergriffen sind!
                 </p>
-                
+
                 <div class="event-highlight">
-                    <h3>Schweinsschmaus-Dinner – 25. November 2025</h3>
-                    <p>
-                        Am 25. November laden wir zu einem großen Schweinsschmaus-Dinner in unserem Vereinshaus ein. Die Péterrévei Tisza 
-                        Tambura Band sorgt für Stimmung, während wir echte ungarische Spezialitäten genießen. Anmeldung bis 20. November bei 
-                        László Kancsár unter +43 699 1909 2536.
-                    </p>
+                    <h3>Sautanz – 6. December 2025</h3>
+                    <p>Am 6. Dezember laden wir unsere Gäste zu einem traditionellen Sautanz-Abend ein. Die Tisza Tambura Band sorgt für die musikalische Unterhaltung, während wir ungarische Köstlichkeiten genießen können. Anmeldungen bei László Kancsár bis November 20: +43 699 1909 2586.</p>
                 </div>
+
+                <img src="assets/images/Rendezvenyek2025.jpeg" alt="2025 Events" style="max-width: 100%; height: auto;">
                 <p><strong>Weitere Programme für 2025 folgen bald!</strong></p>
 
                 <!-- GERMAN HERO IMAGE -->
                 <div style="text-align: center;margin-bottom: 30px">
+                    <img src="https://gulaschfestival.wordpress.com/wp-content/uploads/2025/10/kolbasztolto_hu.jpg" alt="Bécsi Kolbásztöltő Verseny" style="max-width: 100%;height: auto;border-radius: 8px;box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
                     <img src="https://gulaschfestival.wordpress.com/wp-content/uploads/2025/10/kolbasztolto_de.jpg" alt="Wiener Wurstfüllwettbewerb" style="max-width: 100%;height: auto;border-radius: 8px;box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
                 </div>
 
@@ -297,12 +340,19 @@
                         </div>
                         <div style="background: #e8f5e9;padding: 20px;border-radius: 8px;text-align: center">
                             <h3 style="color: #005F2F;margin-top: 0">Abendessen</h3>
-                            <p>Wie jedes Jahr findet ab 19 Uhr ein traditionelles Grillabendessen in unseren Vereinsräumen statt. Mit der Tisza Tambura Band und Volkstanzvorführungen mit Lukács Adrienn und "Röske" Resócki Roland! Mitglieder: 35€ Nicht-Mitglieder: 45€</p>
+                            <p>Wie jedes Jahr findet ab 19 Uhr ein traditionelles sautanz in unseren Vereinsräumen statt. Mit der Tisza Tambura Band und Volkstanzvorführungen mit Lukács Adrienn und "Röske" Resócki Roland! Mitglieder: 35€ Nicht-Mitglieder: 45€</p>
                         </div>
                     </div>
 
                     <p style="text-align: center;margin: 30px 0">
-                        <a href="https://gulaschfestival.com/kolbasztolto" style="display: inline-block;background: #D80000;color: white;padding: 12px 30px;text-decoration: none;border-radius: 5px;font-weight: bold;margin: 10px 5px">Anmeldung</a>
+                        <div style="text-align: center;margin: 30px 0">
+                            <p style="margin: 10px 0">
+                                1. <a href="assets/pdfs/Anmelde_FORMULAR_2025.pdf" download style="display: inline-block;background: #D80000;color: white;padding: 12px 30px;text-decoration: none;border-radius: 5px;font-weight: bold;">Anmeldung</a>
+                            </p>
+                            <p style="margin: 10px 0">
+                                2. <a href="mailto:bmme1899@outlook.com" style="display: inline-block;background: #005F2F;color: #ffffff;padding: 12px 30px;text-decoration: none;border-radius: 5px;font-weight: bold;border: 2px solid #005F2F;">Senden: bmme1899@outlook.com</a>
+                            </p>
+                        </div>
                     </p>
 
                     <div id="registrationForm" style="display: none;background: white;border-radius: 10px;padding: 30px;margin: 20px 0;box-shadow: 0 4px 8px rgba(0,0,0,0.3);position: fixed;top: 50%;left: 50%;z-index: 1000;width: 90%;max-width: 500px;max-height: 90vh">
@@ -327,8 +377,8 @@
                         </ul>
                         <h4 style="color: #005F2F">Eintrittspreise:</h4>
                         <p><strong>30€</strong> - Anmeldegebühr pro Team. Enthält: 1 Biergarnitur, Platzkarte und ein 3x3 Meter Pavillon.</p>
-                        <p><strong>19:00</strong> - Grillabendessen im BMME-Hauptquartier. Mitglieder: 35€, Nicht-Mitglieder: 45€.</p>
-                        <p>Das Programm sowie der Ablauf des Wettbewerbs sehen wie folgt aus: Die Teams können ab 7:00 eintreffen, die an dem Wettbewerb selbst Kochen und das Beste geben werden, um das leckerste und beste Bratwurst zu zubereiten. Sie dürfen auch selbstgemachten Nachtisch, wie Z. B. Strudel oder Hájaskifli mitbringen. Dies wird auch zur Bewertung abgegeben. Die Teams dürfen ihr eigenes Fleisch nach eigenen Vorstellungen verwenden. Aufgrund der Vielfalt der unterschiedlichen Regionen und Zubereitungsarten, können sich die Teams untereinander den einen oder anderen Trick bei der Zubereitung des Gerichtes lehren oder Tipps weitergeben. Wie das Sprichwort auch schon sagt: So viele Häuser, so viele Sitten. Die Teams haben die Möglichkeit bis 13 Uhr ihre Gerichte fertig zu stellen. Um 14 Uhr beginnt die Bewertung der Gerichte durch eine fachliche Jury, die die Gerichte bewertet. Um 15 Uhr ist die Bekanntgabe der Gewinner.</p>
+                        <p><strong>19:00</strong> - Sautanz im BMME-Hauptquartier. Mitglieder: 35€, Nicht-Mitglieder: 45€.</p>
+                        <p>Das Programm sowie der Ablauf des Wettbewerbs sehen wie folgt aus: Die Teams können ab 7:00 eintreffen, die an dem Wettbewerb selbst Kochen und das Beste geben werden, um das leckerste und beste Bratwurst zu zubereiten. Sie dürfen auch selbstgemachte Nachtisch, wie Z. B. Strudel oder Hájaskifli mitbringen. Dies wird auch zur Bewertung abgegeben. Die Teams dürfen ihr eigenes Fleisch nach eigenen Vorstellungen verwenden. Aufgrund der Vielfalt der unterschiedlichen Regionen und Zubereitungsarten, können sich die Teams untereinander den einen oder anderen Trick bei der Zubereitung des Gerichtes lehren oder Tipps weitergeben. Wie das Sprichwort auch schon sagt: So viele Häuser, so viele Sitten. Die Teams haben die Möglichkeit bis 13 Uhr ihre Gerichte fertig zu stellen. Um 14 Uhr beginnt die Bewertung der Gerichte durch eine fachliche Jury, die die Gerichte bewertet. Um 15 Uhr ist die Bekanntgabe der Gewinner.</p>
                         <p>Während des ganztägigen Wettbewerbs, gibt es ein kulturelles Programm. Unter anderem mit: Ungarische Musik für die gute Laune – wir als Veranstalter sorgen mit traditioneller ungarischer Musik, damit Familien und Freunde eine schöne, leckere und unvergessliche Veranstaltung miterleben. Während Köstlichkeiten konsumiert werden, gibt es auch die Möglichkeit, die verschiedenen Teams bei der vielfältigen Zubereitung über die Schulter zu schauen.</p>
                         <p>Für das leibliche Wohl wird sich unser Team sorgen. Sowohl kleine Gäste als auch große Gäste sind herzlich willkommen. Egal ob die in Österreich lebenden Ungarn oder Gäste aus anderen Ländern. Jeder ist bei uns willkommen, denn wie sagt das österreichische Sprichwort? "Setz dich her, dann samma mehr". Nur durch das Zusammenkommen vieler Kulturen, lernt man die andere Kultur kennen.</p>
                         <h4 style="color: #005F2F">ANMELDEGEBÜHR 30€ beinhaltet:</h4>
@@ -340,9 +390,9 @@
                         <p>Vom Team mitzunehmen: Fleisch, Gewürze, Wurstfüller, Werkzeuge zum Zubereiten der Bratwurst.</p>
                         <p><strong>WO: Hirschstettner Straße 19, Block A</strong></p>
                         <h4 style="color: #005F2F">!!!! ACHTUNG !!!!</h4>
-                        <p>Separate Anmeldung zum abendlichen traditionellen Grillabend</p>
+                        <p>Separate Anmeldung zum abendlichen traditionellen sautanz</p>
                         <p>Mitglieder 35€<br>NICHT Mitglieder 45€</p>
-                        <p>Wie jedes Jahr findet ab 19 Uhr in unserem Verein (Hirschstettner Straße 19, Block A) unser traditionelles Grillabendessen mit der Tisza Tambura Musikband, Programm, hausgemachter Bratwurst, Reiswurst, geschmortem Sauerkraut und Brot statt.</p>
+                        <p>Wie jedes Jahr findet ab 19 Uhr in unserem Verein (Hirschstettner Straße 19, Block A) unser traditionelles sautanz mit der Tisza Tambura Musikband, Programm, hausgemachter Bratwurst, Reiswurst, geschmortem Sauerkraut und Brot statt.</p>
                     </div>
 
                     <div style="background: #fff3e0;padding: 20px;border-radius: 8px;text-align: center;margin: 20px 0">
@@ -352,24 +402,25 @@
                     </div>
 
                     <div style="background: white;border-radius: 10px;padding: 30px;margin: 20px 0;box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
-                        <h3 style="color: #005F2F;text-align: center">Veranstalter</h3>
+                        <h3 style="color: #005F2F;text-align: center">Szervezők</h3>
                         <p style="text-align: center;font-size: 1.1em">BMME 1899 | Bundeskanzleramt</p>
                     </div>
+
+                    <h3>Zukünftige Veranstaltungen</h3>
+                    <img src="assets/images/Rendezvenyek2025.jpeg" alt="2025 Events" style="max-width: 100%; height: auto;">
                 </div>
             </section>
 
-            <!-- Gallery Section -->
-            <section id="gallery-de" class="content-section">
-                <h2>Galerie</h2>
+
+
+            <!-- Archive Section -->
+            <section id="archive-de" class="content-section">
+                <h2>Archiv</h2>
                 <p>
-                    Schauen Sie sich Bilder von unseren früheren Veranstaltungen an, bei denen ungarischer Elan und gemeinschaftliche 
-                    Freude im Mittelpunkt standen!
+                    Entdecken Sie Archivmaterialien und Erinnerungen unserer früheren Veranstaltungen! Hier finden alle vergangenen Events ihren Platz.
                 </p>
-                <div class="gallery">
-                    <img src="assets/images/bmme1.jpg" alt="BMME 1" class="gallery-img">
-                    <img src="assets/images/bmme2.jpg" alt="BMME 2" class="gallery-img">
-                    <img src="assets/images/bmme3.jpg" alt="BMME 3" class="gallery-img">
-                    <img src="assets/images/bmme4.jpg" alt="BMME 4" class="gallery-img">
+                <div class="archive">
+                    <p>Archivinhalt bald verfügbar...</p>
                 </div>
             </section>
         </section>
@@ -377,12 +428,12 @@
 
     <footer>
         <p>© 2025 BMME | Hirschstettnerstrasse 19, Wien</p>
-        <p>Email: <a href="mailto:bmme1899@outlook.com">bmme1899@outlook.com</a></p>
-        <p>Telefon: <a href="tel:+4369919092586">+43 699 1909 2586</a></p>
+        <p>Email: <a href="mailto:bmme1899@outlook.com" style="color: #FFD700;">bmme1899@outlook.com</a></p>
+        <p>Telefon: <a href="tel:+4369919092586" style="color: #FFD700;">+43 699 1909 2586</a></p>
         <div class="social-links">
-            <a href="https://facebook.com/VereinBMME" target="_blank">Facebook</a> |
-            <a href="https://instagram.com/bmme1899" target="_blank">Instagram</a> |
-            <a href="https://tiktok.com/@bmme1899" target="_blank">TikTok</a>
+            <a href="https://facebook.com/VereinBMME" target="_blank" style="color: #FFD700;">Facebook</a> |
+            <a href="https://instagram.com/bmme1899" target="_blank" style="color: #FFD700;">Instagram</a> |
+            <a href="https://tiktok.com/@bmme1899" target="_blank" style="color: #FFD700;">TikTok</a>
         </div>
     </footer>
 

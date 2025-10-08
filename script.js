@@ -21,3 +21,28 @@ navLinks.forEach(link => {
         this.classList.add('active');
     });
 });
+
+// Gallery Toggle
+const huToggle = document.getElementById('hu-gallery-toggle');
+const huExpanded = document.getElementById('hu-gallery-expanded');
+huToggle.addEventListener('click', function() {
+    if (huExpanded.style.display === 'none') {
+        huExpanded.style.display = 'block';
+        huToggle.textContent = 'Kevesebb megjelenítése';
+    } else {
+        huExpanded.style.display = 'none';
+        huToggle.textContent = 'Több megjelenítése';
+    }
+});
+
+const deToggle = document.getElementById('de-gallery-toggle');
+const deExpanded = document.getElementById('de-gallery-expanded');
+deToggle.addEventListener('click', function() {
+    if (deExpanded.style.display === 'none') {
+        deExpanded.style.display = 'block';
+        deToggle.textContent = 'Weniger anzeigen';
+    } else {
+        deExpanded.style.display = 'none';
+        deToggle.textContent = 'Mehr anzeigen';
+    }
+});

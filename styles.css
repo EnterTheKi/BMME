@@ -183,6 +183,21 @@ h3 {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+.gallery-toggle-btn {
+    background: #005F2F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.gallery-toggle-btn:hover {
+    background: #004020;
+}
+
 footer {
     text-align: center;
     padding: 20px;

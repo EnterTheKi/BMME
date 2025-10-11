@@ -68,6 +68,46 @@ document.getElementById('de-btn').addEventListener('click', function() {
     document.getElementById('hu-btn').classList.remove('active');
 });
 
+// Slideshow Manual Control
+function initSlideshow(slideshowElement) {
+    const slidesContainer = slideshowElement.querySelector('.slides-container');
+    let currentSlide = parseInt(slideshowElement.dataset.currentSlide) || 0;
+    const totalSlides = 8;
+    let isManual = false;
+
+    function updateSlide() {
+        if (!isManual) return;
+        slidesContainer.style.animation = 'none';
+        slidesContainer.style.transform = `translateX(-${currentSlide * (100 / totalSlides)}%)`;
+        slideshowElement.dataset.currentSlide = currentSlide;
+    }
+
+    const leftBtn = slideshowElement.querySelector('.left-btn');
+    const rightBtn = slideshowElement.querySelector('.right-btn');
+
+    if (leftBtn && rightBtn) {
+        leftBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            isManual = true;
+            currentSlide--;
+            if (currentSlide < 0) currentSlide = totalSlides - 1;
+            updateSlide();
+        });
+
+        rightBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            isManual = true;
+            currentSlide++;
+            if (currentSlide >= totalSlides) currentSlide = 0;
+            updateSlide();
+        });
+    }
+}
+
+// Initialize slideshows
+const slideshows = document.querySelectorAll('.slideshow');
+slideshows.forEach(initSlideshow);
+
 // Navigation Highlight
 const navLinks = document.querySelectorAll('nav ul li a');
 navLinks.forEach(link => {

@@ -59,6 +59,12 @@ document.getElementById('hu-btn').addEventListener('click', function() {
     document.getElementById('de-content').style.display = 'none';
     this.classList.add('active');
     document.getElementById('de-btn').classList.remove('active');
+
+    // Re-initialize slideshows for Hungarian content
+    setTimeout(() => {
+        const huSlideshows = document.querySelectorAll('#hu-content .slideshow');
+        huSlideshows.forEach(initSlideshow);
+    }, 10);
 });
 
 document.getElementById('de-btn').addEventListener('click', function() {
@@ -66,6 +72,12 @@ document.getElementById('de-btn').addEventListener('click', function() {
     document.getElementById('de-content').style.display = 'block';
     this.classList.add('active');
     document.getElementById('hu-btn').classList.remove('active');
+
+    // Re-initialize slideshows for German content
+    setTimeout(() => {
+        const deSlideshows = document.querySelectorAll('#de-content .slideshow');
+        deSlideshows.forEach(initSlideshow);
+    }, 10);
 });
 
 // Slideshow Manual Control
@@ -82,8 +94,13 @@ function initSlideshow(slideshowElement) {
         slideshowElement.dataset.currentSlide = currentSlide;
     }
 
+    // Look for both regular and German-specific buttons
     const leftBtn = slideshowElement.querySelector('.left-btn');
     const rightBtn = slideshowElement.querySelector('.right-btn');
+
+    // Also check for German-specific buttons
+    const leftBtnDe = slideshowElement.querySelector('.left-btn-de');
+    const rightBtnDe = slideshowElement.querySelector('.right-btn-de');
 
     if (leftBtn && rightBtn) {
         leftBtn.addEventListener('click', (e) => {
@@ -102,6 +119,25 @@ function initSlideshow(slideshowElement) {
             updateSlide();
         });
     }
+
+    // Handle German-specific buttons if they exist
+    if (leftBtnDe && rightBtnDe) {
+        leftBtnDe.addEventListener('click', (e) => {
+            e.stopPropagation();
+            isManual = true;
+            currentSlide--;
+            if (currentSlide < 0) currentSlide = totalSlides - 1;
+            updateSlide();
+        });
+
+        rightBtnDe.addEventListener('click', (e) => {
+            e.stopPropagation();
+            isManual = true;
+            currentSlide++;
+            if (currentSlide >= totalSlides) currentSlide = 0;
+            updateSlide();
+        });
+    }
 }
 
 // Initialize slideshows
@@ -111,9 +147,59 @@ slideshows.forEach(initSlideshow);
 // Navigation Highlight
 const navLinks = document.querySelectorAll('nav ul li a');
 navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-        navLinks.forEach(l => l.classList.remove('active'));
-        this.classList.add('active');
+    link.addEventListener('click', function(e) {
+        // Scroll to the section smoothly
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            e.preventDefault();
+
+            // For German content, we need to scroll to the German section
+            let scrollToSection = targetSection;
+
+            // If we're currently showing German content, try to find the German equivalent
+            const deContent = document.getElementById('de-content');
+            if (deContent && deContent.style.display !== 'none') {
+                const deTargetId = targetId + '-de';
+                const deTargetSection = document.getElementById(deTargetId);
+                if (deTargetSection) {
+                    scrollToSection = deTargetSection;
+                }
+            }
+
+            // Remove active class from all nav links
+            navLinks.forEach(l => l.classList.remove('active'));
+            // Add active class to clicked link
+            this.classList.add('active');
+
+            // Scroll to the appropriate section
+            scrollToSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+// Update navigation highlight based on scroll position
+window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('.content-section');
+    const scrollPos = window.pageYOffset + 200; // offset to detect section earlier
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+
+        // Check if we're in a specific section
+        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+            // Remove active class from all nav links
+            navLinks.forEach(link => link.classList.remove('active'));
+
+            // Find the corresponding nav link
+            const correspondingLink = document.querySelector(`nav a[href="#${sectionId.replace('-de', '')}"]`);
+            if (correspondingLink) {
+                correspondingLink.classList.add('active');
+            }
+        }
     });
 });
 

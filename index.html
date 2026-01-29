@@ -20,11 +20,11 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#home" class="active">Kezdőlap</a></li>
-                <li><a href="#about">Rólunk</a></li>
-                <li><a href="#gallery">Galéria</a></li>
-                <li><a href="#events">Események</a></li>
-                <li><a href="#archive">Archívum</a></li>
+                <li><a href="#home" class="nav-link active">Kezdőlap</a></li>
+                <li><a href="#about" class="nav-link">Rólunk</a></li>
+                <li><a href="#gallery" class="nav-link">Galéria</a></li>
+                <li><a href="#events" class="nav-link">Események</a></li>
+                <li><a href="#archive" class="nav-link">Archívum</a></li>
             </ul>
         </nav>
     </header>
@@ -66,20 +66,37 @@
                     </div>
                 </div>
 
-                
+                <!-- New Poster -->
+                <img src="assets/images/sz1.jpg" alt="New Poster" style="max-width: 100%; height: auto; margin: 20px 0; border-radius: 8px;">
+
             </section>
 
             <!-- About Us Section -->
             <section id="about" class="content-section">
                 <h2>Rólunk</h2>
                 <p>
-                    A BMME több mint egy egyesület – egy valódi közösség, ahol a magyar hagyományok és a barátság találkoznak. 
-                    Székházunk rendezvényterme ideális helyszín 80-90 fős összejövetelekhez, és rendszerint teltházas eseményeket 
-                    tartunk. Egy 6-7 fős csapat fáradhatatlanul dolgozik, hogy minden találkozó felejthetetlen 
-                    legyen. Legyen szó gulyásfőző versenyről – ahol a Szolnoki Gulyásfesztiválon harmadik helyet értünk el – vagy egy 
-                    nagyszabású Gulaschfestivalról a Donauparkban, nálunk a gasztronómia és a zene mindig kéz a kézben jár. 
-                    “Azért csináljuk, mert szeretjük” – vallja Kancsár László, és ez az elhivatottság tartja életben a BMME szellemét.
+                    A BMME több mint egy egyesület – egy valódi közösség, ahol a magyar hagyományok és a barátság találkoznak.
+                    Székházunk rendezvényterme ideális helyszín 80-90 fős összejövetelekhez, és rendszerint teltházas eseményeket
+                    tartunk. Egy 6-7 fős csapat fáradhatatlanul dolgozik, hogy minden találkozó felejthetetlen
+                    legyen. Legyen szó gulyásfőző versenyről – ahol a Szolnoki Gulyásfesztiválon harmadik helyet értünk el – vagy egy
+                    nagyszabású Gulaschfestivalról a Donauparkban, nálunk a gasztronómia és a zene mindig kéz a kézben jár.
+                    "Azért csináljuk, mert szeretjük" – vallja Kancsár László, és ez az elhivatottság tartja életben a BMME szellemét.
                 </p>
+
+                <!-- Membership Information -->
+                <div style="background: #f0f8ff; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #005F2F;">
+                    <h3>Hogyan lehet tagunk?</h3>
+                    <p>Tagunk lenni egyszerű! Töltsd ki a belépési nyilatkozatot (tagsági kérelmet) és fizess tagsági díjat.</p>
+
+                    <h4>Tagsági díj:</h4>
+                    <ul>
+                        <li>Első alkalommal: <strong>45€</strong></li>
+                        <li>Minden további évre: <strong>30€/év</strong></li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><a href="assets/pdfs/Belépési nyilatkozat.pdf" download class="cta-button">Töltsd le a tagsági kérelmet!</a></p>
+                </div>
+
                 <a href="assets/pdfs/Belépési nyilatkozat.pdf" download class="cta-button">Tagosodj!</a>
             </section>
 
@@ -102,6 +119,7 @@
                         <img src="assets/images/kolbasztolto_de.jpeg" alt="Kolbasztolto DE" class="gallery-img">
                         <img src="assets/images/kolbasztolto_hu.jpeg" alt="Kolbasztolto HU" class="gallery-img">
                         <img src="assets/images/Rendezvenyek2025.jpeg" alt="2025 Events" class="gallery-img">
+                        <img src="assets/images/sz1.jpg" alt="Új plakát" class="gallery-img">
 
                         <img src="assets/images/disznotoros/btt.jpg" alt="Tambura 1" class="gallery-img">
                         <img src="assets/images/disznotoros/btt2.jpg" alt="Tambura 2" class="gallery-img">
@@ -246,123 +264,16 @@
                 </div>
                 <button id="hu-gallery-toggle" class="gallery-toggle-btn">Több megjelenítése</button>
 
-            
-                <div style="text-align: center;margin-bottom: 30px">
-                    <img src="assets/images/kolbasztolto_hu.jpeg" alt="Bécsi Kolbásztöltő Verseny" style="max-width: 100%;height: auto;border-radius: 8px;box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
-                    <img src="assets/images/kolbasztolto_de.jpeg" alt="Wiener Wurstfüllwettbewerb" style="max-width: 100%;height: auto;border-radius: 8px;box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
-                </div>
-
-                <!-- HUNGARIAN SECTION -->
-                <div style="background: white;border-radius: 10px;padding: 30px;margin: 20px 0;box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
-                    <h1 style="color: #005F2F;font-size: 2.5em;margin: 10px 0;text-align: center">1. BÉCSI KOLBÁSZTÖLTŐ VERSENY</h1>
-                    <p style="font-size: 1.3em;color: #333;margin: 5px 0;text-align: center">Magyar sültkolbász verseny – élő látvány!</p>
-                    <p style="font-size: 1.2em;color: #D80000;font-weight: bold;margin: 5px 0;text-align: center"><strong>2025. december 6. | 07:00 – 15:00</strong></p>
-                    <p style="font-size: 1.1em;color: #333;margin: 5px 0;text-align: center">Hirschstettner Straße 19, Bécs 22. kerület, Block A</p>
-
-                    <p style="font-size: 1.1em;text-align: center;background: #e8f5e9;padding: 15px;border-radius: 5px;margin: 20px 0">
-                        Kolbásztöltő Verseny | Házikonyha | Forraltbor | Magyar Néptánc | Tamburazene | Szórakoztató Zene
-                    </p>
-
-                    <div style="display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 20px;margin: 20px 0">
-                        <div style="background: #e8f5e9;padding: 20px;border-radius: 8px;text-align: center">
-                            <h3 style="color: #005F2F;margin-top: 0">Bejelentkezés</h3>
-                            <p><strong>30€</strong> bejelentkezési díj</p>
-                            <p>Tartalmazza: 1 sörasztal garnitúrát és helypénzt</p>
-                            <p>3x3 méter pavilon</p>
-                        </div>
-                        <div style="background: #e8f5e9;padding: 20px;border-radius: 8px;text-align: center">
-                            <h3 style="color: #005F2F;margin-top: 0">Élő program</h3>
-                            <p>Házikonyha, forraltbor, magyar néptánc, szórakoztató zene és tamburazene.</p>
-                        </div>
-                        <div style="background: #e8f5e9;padding: 20px;border-radius: 8px;text-align: center">
-                            <h3 style="color: #005F2F;margin-top: 0">Vacsora</h3>
-                            <p>Mint minden évben este 19 órától Hagyományos Disznótoros vacsora egyesületünk termében A Tisza tambura zenekar kiséretében valamint Délvidéki Táncbemutató Lukács Adrien-el és "Röske"Resócki Rolland-al! Tagoknak 35€ Nem tagoknak 45€</p>
-                        </div>
-                    </div>
-
-                    <p style="text-align: center;margin: 30px 0">
-                        <div style="text-align: center;margin: 30px 0">
-                            <p style="margin: 10px 0">
-                                1. <a href="assets/pdfs/Anmelde_FORMULAR_2025.pdf" download style="display: inline-block;background: #D80000;color: white;padding: 12px 30px;text-decoration: none;border-radius: 5px;font-weight: bold;">Bejelentkezés</a>
-                            </p>
-                            <p style="margin: 10px 0">
-                                2. <a href="mailto:bmme1899@outlook.com" style="display: inline-block;background: #005F2F;color: #ffffff;padding: 12px 30px;text-decoration: none;border-radius: 5px;font-weight: bold;border: 2px solid #005F2F;">Küldés: bmme1899@outlook.com</a>
-                            </p>
-                        </div>
-                    </p>
-
-                    <div style="background: #f9f9f9;padding: 20px;border-radius: 8px;margin: 20px 0;border-left: 5px solid #D80000">
-                        <h3 style="color: #005F2F">Magyar „kolbászkészítő verseny” Bécsben</h3>
-                        <p>Betekintés a disznótor évszázados hagyományába</p>
-                        <p>Ez a magyar hagyomány, évszázadok óta az adventi időszak jellemzője volt a vidéki lakosok körében. Disznóölés alkalmával összefogott a család, barátaik, szomszédaik, hogy az egész évben gonddal nevelgetett disznót leöljék és feldolgozzák, így biztosítva a közelgő karácsonyi és újévi ünnepek lakomáját. Hagyományosan ezt a napot, a böllérek és segítőik házi magyar pálinkával kezdték. Felvértezve magukat a hideg ellen és a jó hangulatra. Az üdvözlő pálinka után megkezdődhetett a munka. Az állat vérének felfogása után jött a bőrének pörkölése, majd a húsának szétszedése. Ezután került sor a különböző töltelékes finomságok készítésére mint a: disznósajt, hurka, kolbász, szalámi. A serényen dolgozó férfiak energia pótlásáról az asszonyok gondoskodtak. Sütt vér - tokaalja, -máj formájában. Majd este a megfeszített munka után tort ültek. Volt ott minden jó: savanyú leves belsőségekkel, sültek, kóstoló az elkészített hurkából, kolbászból. Édességként pedig hájas kifli a friss hájból.</p>
-                        <p>Mi, BMME mint a magyar kultúra képviselői, felhívjuk a figyelmet mindazok számára kiknek fontos gyökereink megőrzése, tradíciónk ápolása. Szeretnénk egy a disznótor témához kapcsolódó versenyt hirdetni, Disznótoros kolbászkészítő verseny címszó alatt, ahol elődeink örökségét igyekezünk tovább életben tartani.</p>
-                        <p><strong>Helyszín - Hirschstettner Straße 19, Bécs 22. kerület, Block A</strong></p>
-                        <h4 style="color: #005F2F">Programunk:</h4>
-                        <ul>
-                            <li>07:00 – 08:00 Disznótoros kolbászkészítő verseny – gyülekező</li>
-                            <li>8:00 – a verseny indítása</li>
-                            <li>13:00 – az elkészítés idő vége</li>
-                            <li>14:00-15:00 - az eredmények ünnepélyes kihirdetése</li>
-                        </ul>
-                        <h4 style="color: #005F2F">Belépések:</h4>
-                        <p><strong>30€</strong> - Regisztrációs díj csapatunként. Tartalmazza: 1 sörasztal garnitúrát, helypénzt és egy 3x3 méteres pavilont.</p>
-                        <p><strong>19:00</strong> - Disznótoros vacsora a BMME székhelyén. Tagoknak 35€, Nem tagoknak 45€.</p>
-                        <h4 style="color: #005F2F">Részletek:</h4>
-                        <p>A 7:00 órai gyülekező után a csapatok elfoglalhatják helyüket a számukra biztosított sörasztalok mellett. 8:00 órakor indul a verseny. A csapatok saját ötletük alapján, vagy a régiójuk hagyományát követve mint ahogy a közmondás is mondja "Ahány ház annyi szokás" alapon elkészítik finomságaikat - reggeli; hurka; kolbász lehetőség szerint!</p>
-                        <p>13:00 – a kész kolbászok, hurkák szakmai zsűri elé kerülnek</p>
-                        <p>14:00 - 15:00 eredményhirdetés</p>
-                        <p>Az egész napi munkát egy kulturális program kíséri, magyar zenével és a Bécsben működő valamint vendég táncosok-tánccsoportok lélekemelő táncbemutatójával.</p>
-                        <p>A benevezési díj 30€ tartalmaz:</p>
-                        <ul>
-                            <li>Sörpad garnitúra</li>
-                            <li>3x3 méteres Pavilon</li>
-                            <li>Főző-sütőhely</li>
-                        </ul>
-                        <p>A Gulyásfesztivállal eltérően ennél a rendezvénynél a csapatok kizárólag saját alapanyagból készíthetik a kolbászt; hurkát stb. Az előkészítéshez szükséges eszközöket a csapatoknak kell hozni!</p>
-                        <p>Ami még nem elhanyagolható: Az idelátogató kedves érdeklődők nem csak figyelmükkel követhetik a finomságok készülését, hanem a számukra felállított állófogadási asztaloknál ők is fogyaszthatják a megvásárolt étkeket, italokat.</p>
-                        <p>Mindenkit szeretettel várunk! Legyen az kicsi vagy nagy, magyar vagy más ajkú, akit érdekel ez a régi magyar hagyomány a hozzá tartozó ízvilággal. Gyere el, ülj közénk, hogy többen legyünk! Hiszen megismerve a sokszínűséget, egymás szokásait, kultúráját elfogadóbbá válhatunk ebben a kaotikus rideg világban.</p>
-                        <h4 style="color: #005F2F">Figyelem!</h4>
-                        <p>!!!Külön bejelentkezéssel!!!</p>
-                        <p>Mint minden évben este 19 órától Hagyományos Disznótoros vacsora egyesületünk termében a Tisza tambura zenekar kíséretében valamint Délvidéki Táncbemutató Lukács Adriennel és "Röske" Resócki Rolanddal!</p>
-                        <p>Tagoknak 35€<br>Nem tagoknak 45€</p>
-                        <p>BMME vezetősége</p>
-                    </div>
-
-                    <div style="background: #fff3e0;padding: 20px;border-radius: 8px;text-align: center;margin: 20px 0">
-                        <h3 style="color: #005F2F">Helyszín</h3>
-                        <p><strong>Hirschstettner Straße 19, Bécs 22. kerület, Block A</strong></p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5313.88658301842!2d16.449463293789574!3d48.246219069483324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d06b3af8f19ef%3A0x17f111c02c0e3db2!2sHirschstettner%20Str.%2019%2C%201220%20Wien!5e0!3m2!1sen!2sat!4v1758980873443!5m2!1sen!2sat" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-
-                    <div style="background: white;border-radius: 10px;padding: 30px;margin: 20px 0;box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
-                        <h3 style="color: #005F2F;text-align: center">Szervezők</h3>
-                        <p style="text-align: center;font-size: 1.1em">BMME 1899 | Bundeskanzleramt</p>
-                    </div>
-
-                    </section>
-
             <!-- Events Section -->
             <section id="events" class="content-section">
                 <h2>Jövőbeli Események</h2>
-               
-                </div>
-                    
-                    
-                    <p>
-                    2025-ben is izgalmas programokkal várjuk barátainkat! A részvétel tagoknak 35 €, nem tagoknak 45 €, ami egy 
-                    négyfogásos vacsorát és egy üdvözlő italt foglal magában. Jegyeinket érdemes időben lefoglalni, mert gyorsan 
+
+                <p>
+                    2025-ben is izgalmas programokkal várjuk barátainkat! A részvétel tagoknak 35 €, nem tagoknak 45 €, ami egy
+                    négyfogásos vacsorát és egy üdvözlő italt foglal magában. Jegyeinket érdemes időben lefoglalni, mert gyorsan
                     elfogynak!
                 </p>
-                
-                <div class="event-highlight">
-                    <h3>Disznótoros Vacsora – 2025. December 6.</h3>
-                    <p>
-                        December 6-án egy hatalmas disznótoros vacsorával várjuk vendégeinket székházunkban. A Péterrévei Tisza 
-                        Tambura Zenekar szolgáltatja a hangulatot, miközben igazi magyaros ízeket kóstolhatunk meg. Jelentkezni 
-                        Kancsár Lászlónál lehet november 20-ig a +43 699 1909 2586 telefonszámon.
-                    </p>
-                    <img src="assets/images/Rendezvenyek2025.jpeg" alt="2025-ös Rendezvények" style="max-width: 100%; height: auto;">
-                </div>
+
             </section>
 
             <section id="archive" class="content-section">
@@ -385,6 +296,22 @@
                     <p>A tematikus estek mint karácsonyi ünnep, anyák-, nők napja, operett gála, disznótoros est mellett zenés, táncos mulatságokat is tartunk amit nagy érdeklődés fogad. 2010 óta rendszeresen minden évben megszervezzük egyesületünknek kétségkívül a legkedvesebb és legnagyobb rendezvényét a „Gulyásfesztivál"-t! A fesztivál lényege és célja a hagyományos magyar marhapörkölt illetve magyar konyha megismertetése a fiatal nemzedékkel, valamint más nemzetek gasztronómiai kultúrájával.</p>
                     <p>Itt a Magyarházban otthonra lelhet minden dolgozó ember, aki kikapcsolódásra vágyik, és meg szeretné élni a magyar virtust. Kapcsolódj hozzánk te is!</p>
                 </div>
+
+                <!-- Archive Event Information -->
+                <div class="event-highlight">
+                    <h3>Gulyásfesztivál - 2024</h3>
+                    <p>Az idei Gulyásfesztiválon részt vettünk a Donauparkban, ahol bemutattuk a hagyományos magyar gulyást és gasztronómiai kultúránkat. A rendezvényen több száz vendég vett részt, és sokan érdeklődtek a BMME tevékenysége iránt.</p>
+                </div>
+
+                <div class="event-highlight">
+                    <h3>Évfordulós Ünnepség - 2019</h3>
+                    <p>120 éves jubileumi ünnepségünkön több száz vendéget láttunk vendégül, ahol bemutattuk az egyesület történetét és jövőbe mutató terveinket. A rendezvényen részt vettek különböző magyar együttesek és előadók is.</p>
+                </div>
+
+                <div class="event-highlight">
+                    <h3>Kolbász Töltő Verseny</h3>
+                    <p>Meghitt estéken szoktuk megrendezni a kolbász töltő versenyt, ahol a résztvevők hagyományos módszerekkel töltik meg a kolbászburokot. Az esemény mindig nagy érdeklődést élvez, és remek lehetőség a közösségépítésre.</p>
+                </div>
             </section>
         </section>
 
@@ -403,8 +330,8 @@
                 </p>
                 <img src="assets/images/BMMEmain.jpg" alt="BMME Main" class="main-image">
                 <div class="slideshow" data-current-slide="0">
-                    <button class="slide-btn left-btn" id="left-btn-de"><</button>
-                    <button class="slide-btn right-btn" id="right-btn-de">></button>
+                    <button class="slide-btn left-btn left-btn-de"><</button>
+                    <button class="slide-btn right-btn right-btn-de">></button>
                     <div class="slides-container">
                         <img src="assets/images/bmme2.jpg" alt="BMME 2" class="slide">
                         <img src="assets/images/bmme3.jpg" alt="BMME 3" class="slide">
@@ -423,22 +350,40 @@
                         <img src="assets/images/bmme8.jpg" alt="BMME 8" class="slide">
                     </div>
                 </div>
+
+                <!-- New Poster -->
+                <img src="assets/images/sz1.jpg" alt="New Poster" style="max-width: 100%; height: auto; margin: 20px 0; border-radius: 8px;">
             </section>
 
             <!-- About Us Section -->
             <section id="about-de" class="content-section">
                 <h2>Über Uns</h2>
                 <p>
-                    Der BMME ist mehr als ein Verein – er ist eine echte Gemeinschaft, in der ungarische Traditionen und Freundschaft 
-                    zusammentreffen. Unser Veranstaltungsraum ist ideal für 80-90 Personen und meist ausgebucht. Ein 6-7-köpfiges Team arbeiten unermüdlich, um jede Veranstaltung unvergesslich zu machen. Ob ein Gulaschwettbewerb – 
-                    bei dem wir beim Szolnoker Gulyásfestival den dritten Platz erreichten – oder das große Gulaschfest im Donaupark, 
-                    bei uns gehen Gastronomie und Musik Hand in Hand. „Wir machen es, weil wir es lieben“, sagt László Kancsár, und diese 
+                    Der BMME ist mehr als ein Verein – er ist eine echte Gemeinschaft, in der ungarische Traditionen und Freundschaft
+                    zusammentreffen. Unser Veranstaltungsraum ist ideal für 80-90 Personen und meist ausgebucht. Ein 6-7-köpfiges Team arbeiten unermüdlich, um jede Veranstaltung unvergesslich zu machen. Ob ein Gulaschwettbewerb –
+                    bei dem wir beim Szolnoker Gulyásfestival den dritten Platz erreichten – oder das große Gulaschfest im Donaupark,
+                    bei uns gehen Gastronomie und Musik Hand in Hand. "Wir machen es, weil wir es lieben", sagt László Kancsár, und diese
                     Leidenschaft hält den BMME-Geist am Leben.
                 </p>
-                <a href="#events" class="cta-button">Schließen Sie sich uns an!</a>
+
+                <!-- Membership Information -->
+                <div style="background: #f0f8ff; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #005F2F;">
+                    <h3>Wie kann man Mitglied werden?</h3>
+                    <p>Es ist einfach, unser Mitglied zu werden! Füllen Sie das Beitrittsformular aus und zahlen Sie den Mitgliedsbeitrag.</p>
+
+                    <h4>Mitgliedsbeitrag:</h4>
+                    <ul>
+                        <li>Erstmals: <strong>45€</strong></li>
+                        <li>Für jedes weitere Jahr: <strong>30€/Jahr</strong></li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><a href="assets/pdfs/Belépési nyilatkozat.pdf" download class="cta-button">Laden Sie das Beitrittsformular herunter!</a></p>
+                </div>
+
+                <a href="#events-de" class="cta-button">Schließen Sie sich uns an!</a>
             </section>
 
-            <!-- Gallery Section On Top -->
+            <!-- Gallery Section -->
             <section id="gallery-de" class="content-section">
                 <h2>Galerie</h2>
                 <p>
@@ -447,7 +392,6 @@
                     <a href="https://gulaschfestival.com/gulasch-2024/" target="_blank">Mehr Bilder vom Gulaschfestival</a>
                 </p>
                 <div class="gallery">
-                    <img src="assets/images/bmme1.jpg" alt="BMME 1" class="gallery-img">
                     <img src="assets/images/bmme2.jpg" alt="BMME 2" class="gallery-img">
                     <img src="assets/images/bmme3.jpg" alt="BMME 3" class="gallery-img">
                     <img src="assets/images/bmme4.jpg" alt="BMME 4" class="gallery-img">
@@ -459,6 +403,7 @@
                         <img src="assets/images/kolbasztolto_de.jpeg" alt="Kolbasztolto DE" class="gallery-img">
                         <img src="assets/images/kolbasztolto_hu.jpeg" alt="Kolbasztolto HU" class="gallery-img">
                         <img src="assets/images/Rendezvenyek2025.jpeg" alt="2025 Events" class="gallery-img">
+                        <img src="assets/images/sz1.jpg" alt="Neues Poster" class="gallery-img">
                         <img src="assets/images/disznotoros/btt.jpg" alt="Tambura 1" class="gallery-img">
                         <img src="assets/images/disznotoros/btt2.jpg" alt="Tambura 2" class="gallery-img">
                         <img src="assets/images/disznotoros/btt3.jpg" alt="Tambura 3" class="gallery-img">
@@ -601,123 +546,29 @@
                     </div>
                 </div>
                 <button id="de-gallery-toggle" class="gallery-toggle-btn">Mehr anzeigen</button>
-
-                </section>
+            </section>
 
             <!-- Events Section -->
             <section id="events-de" class="content-section">
-                <h2>Veranstaltungen</h2>
+                <h2>Zukünftige Veranstaltungen</h2>
                 <p>
                     Auch 2025 erwarten unsere Freunde spannende Programme! Die Teilnahme kostet für Mitglieder 35 €, für Nicht-Mitglieder
                     45 €, inklusive eines viergängigen Abendessens und eines Begrüßungsgetränks. Tickets sollten frühzeitig reserviert werden,
                     da sie schnell vergriffen sind!
                 </p>
 
+                <!-- Event Highlights for German -->
                 <div class="event-highlight">
-                    <h3>Sautanz – 6. December 2025</h3>
+                    <h3>Sautanz – 6. Dezember 2025</h3>
                     <p>Am 6. Dezember laden wir unsere Gäste zu einem traditionellen Sautanz-Abend ein. Die Tisza Tambura Band sorgt für die musikalische Unterhaltung, während wir ungarische Köstlichkeiten genießen können. Anmeldungen bei László Kancsár bis November 20: +43 699 1909 2586.</p>
                 </div>
 
-                <img src="assets/images/Rendezvenyek2025.jpeg" alt="2025 Events" style="max-width: 100%; height: auto;">
-                <p><strong>Weitere Programme für 2025 folgen bald!</strong></p>
-
-                <!-- GERMAN HERO IMAGE -->
-                <div style="text-align: center;margin-bottom: 30px">
-                    <img src="assets/images/kolbasztolto_hu.jpeg" alt="Bécsi Kolbásztöltő Verseny" style="max-width: 100%;height: auto;border-radius: 8px;box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
-                    <img src="assets/images/kolbasztolto_de.jpeg" alt="Wiener Wurstfüllwettbewerb" style="max-width: 100%;height: auto;border-radius: 8px;box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
-                </div>
-
-                <div style="background: white;border-radius: 10px;padding: 30px;margin: 20px 0;box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
-                    <h1 style="color: #005F2F;font-size: 2.5em;margin: 10px 0;text-align: center">1. WIENER WURSTFÜLLWETTBEWERB</h1>
-                    <p style="font-size: 1.3em;color: #333;margin: 5px 0;text-align: center">Ungarischer Wurstwettbewerb – Live-Show!</p>
-                    <p style="font-size: 1.2em;color: #D80000;font-weight: bold;margin: 5px 0;text-align: center"><strong>6. Dezember 2025 | 07:00 – 15:00</strong></p>
-                    <p style="font-size: 1.1em;color: #333;margin: 5px 0;text-align: center">Hirschstettner Straße 19, Block A</p>
-
-                    <p style="font-size: 1.1em;text-align: center;background: #e8f5e9;padding: 15px;border-radius: 5px;margin: 20px 0">
-                        Bratwurst-Wettbewerb | Hausmannskost | Glühwein | Ungarischer Volkstanz | Tambura-Musik | Unterhaltungsmusik
-                    </p>
-
-                    <div style="display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 20px;margin: 20px 0">
-                        <div style="background: #e8f5e9;padding: 20px;border-radius: 8px;text-align: center">
-                            <h3 style="color: #005F2F;margin-top: 0">Anmeldung</h3>
-                            <p><strong>30€</strong> Anmeldegebühr</p>
-                            <p>Enthält: 1 Biergarnitur und Platzkarte</p>
-                            <p>3x3 Meter Pavillon</p>
-                        </div>
-                        <div style="background: #e8f5e9;padding: 20px;border-radius: 8px;text-align: center">
-                            <h3 style="color: #005F2F;margin-top: 0">Live-Programm</h3>
-                            <p>Hausmannskost, Glühwein, ungarischer Volkstanz, unterhaltsame Musik und Tambura-Musik.</p>
-                        </div>
-                        <div style="background: #e8f5e9;padding: 20px;border-radius: 8px;text-align: center">
-                            <h3 style="color: #005F2F;margin-top: 0">Abendessen</h3>
-                            <p>Wie jedes Jahr findet ab 19 Uhr ein traditionelles sautanz in unseren Vereinsräumen statt. Mit der Tisza Tambura Band und Volkstanzvorführungen mit Lukács Adrienn und "Röske" Resócki Roland! Mitglieder: 35€ Nicht-Mitglieder: 45€</p>
-                        </div>
-                    </div>
-
-                    <p style="text-align: center;margin: 30px 0">
-                        <div style="text-align: center;margin: 30px 0">
-                            <p style="margin: 10px 0">
-                                1. <a href="assets/pdfs/Anmelde_FORMULAR_2025.pdf" download style="display: inline-block;background: #D80000;color: white;padding: 12px 30px;text-decoration: none;border-radius: 5px;font-weight: bold;">Anmeldung</a>
-                            </p>
-                            <p style="margin: 10px 0">
-                                2. <a href="mailto:bmme1899@outlook.com" style="display: inline-block;background: #005F2F;color: #ffffff;padding: 12px 30px;text-decoration: none;border-radius: 5px;font-weight: bold;border: 2px solid #005F2F;">Senden: bmme1899@outlook.com</a>
-                            </p>
-                        </div>
-                    </p>
-
-                    <div id="registrationForm" style="display: none;background: white;border-radius: 10px;padding: 30px;margin: 20px 0;box-shadow: 0 4px 8px rgba(0,0,0,0.3);position: fixed;top: 50%;left: 50%;z-index: 1000;width: 90%;max-width: 500px;max-height: 90vh">
-                        <span style="float: right;font-size: 24px;cursor: pointer;color: #D80000">&times;</span>
-                        <h3 style="color: #005F2F;text-align: center">Regisztrációs Űrlap / Anmeldeformular</h3>
-                        <!-- Add form fields here if needed -->
-                    </div>
-
-                    <div id="overlay" style="display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.5);z-index: 999"></div>
-
-                    <div style="background: #f9f9f9;padding: 20px;border-radius: 8px;margin: 20px 0;border-left: 5px solid #D80000">
-                        <h3 style="color: #005F2F">Ungarischer Bratwurst Wettbewerb in Wien</h3>
-                        <p>Einblick in die Jahrhunderte alte Tradition:</p>
-                        <p>Vorab ein kleiner Einblick in die Jahrhunderte alte ungarische Tradition. Zu Beginn der Adventszeit, gibt es seit Jahrhunderten ein Fest der Landbewohner mit ihren Familien und Freunden in Ungarn. Bei diesem Fest geht es hauptsächlich um das Schlachten und Verarbeiten der selbst aufgezogenen Schweine. Mit diesem Fest, das es jedes Jahr um dieselbe Zeit gibt, soll das zukünftige Weihnachtsfest sichergestellt werden. Traditionell wird der Tag, an dem die Verarbeitung stattfindet, mit einem guten selbst gebrannten ungarischen Schnaps begrüßt. Nachdem Begrüßungsschnaps beginnen sie mit der Verarbeitung des Schweines, zerlegen das Fleisch in Teile, bereiten Bratwurst, Reiswurst, Salami, Presswurst und andere Köstlichkeiten.</p>
-                        <p>Wir als BMME und Vertreter der ungarischen Kultur möchten eine kleine Version dieser uralten Tradition veranstalten und sie an diejenigen nahebringen, die besonderes Interesse an der ungarischen Tradition und Kultur haben.</p>
-                        <h4 style="color: #005F2F">Unser Programm:</h4>
-                        <ul>
-                            <li>07:00 – 8:00 Eintreffen der Teams</li>
-                            <li>8:00 Start des Wurstwettbewerbs</li>
-                            <li>13:00 Ende der Vorbereitungszeit</li>
-                            <li>14:00 – 15:00 Bekanntgabe der Ergebnisse und Preisverleihung</li>
-                        </ul>
-                        <h4 style="color: #005F2F">Eintrittspreise:</h4>
-                        <p><strong>30€</strong> - Anmeldegebühr pro Team. Enthält: 1 Biergarnitur, Platzkarte und ein 3x3 Meter Pavillon.</p>
-                        <p><strong>19:00</strong> - Sautanz im BMME-Hauptquartier. Mitglieder: 35€, Nicht-Mitglieder: 45€.</p>
-                        <p>Das Programm sowie der Ablauf des Wettbewerbs sehen wie folgt aus: Die Teams können ab 7:00 eintreffen, die an dem Wettbewerb selbst Kochen und das Beste geben werden, um das leckerste und beste Bratwurst zu zubereiten. Sie dürfen auch selbstgemachte Nachtisch, wie Z. B. Strudel oder Hájaskifli mitbringen. Dies wird auch zur Bewertung abgegeben. Die Teams dürfen ihr eigenes Fleisch nach eigenen Vorstellungen verwenden. Aufgrund der Vielfalt der unterschiedlichen Regionen und Zubereitungsarten, können sich die Teams untereinander den einen oder anderen Trick bei der Zubereitung des Gerichtes lehren oder Tipps weitergeben. Wie das Sprichwort auch schon sagt: So viele Häuser, so viele Sitten. Die Teams haben die Möglichkeit bis 13 Uhr ihre Gerichte fertig zu stellen. Um 14 Uhr beginnt die Bewertung der Gerichte durch eine fachliche Jury, die die Gerichte bewertet. Um 15 Uhr ist die Bekanntgabe der Gewinner.</p>
-                        <p>Während des ganztägigen Wettbewerbs, gibt es ein kulturelles Programm. Unter anderem mit: Ungarische Musik für die gute Laune – wir als Veranstalter sorgen mit traditioneller ungarischer Musik, damit Familien und Freunde eine schöne, leckere und unvergessliche Veranstaltung miterleben. Während Köstlichkeiten konsumiert werden, gibt es auch die Möglichkeit, die verschiedenen Teams bei der vielfältigen Zubereitung über die Schulter zu schauen.</p>
-                        <p>Für das leibliche Wohl wird sich unser Team sorgen. Sowohl kleine Gäste als auch große Gäste sind herzlich willkommen. Egal ob die in Österreich lebenden Ungarn oder Gäste aus anderen Ländern. Jeder ist bei uns willkommen, denn wie sagt das österreichische Sprichwort? "Setz dich her, dann samma mehr". Nur durch das Zusammenkommen vieler Kulturen, lernt man die andere Kultur kennen.</p>
-                        <h4 style="color: #005F2F">ANMELDEGEBÜHR 30€ beinhaltet:</h4>
-                        <ol>
-                            <li>Heurigen-Garnitur</li>
-                            <li>3x3 Meter Pavillon</li>
-                            <li>Platz zum Braten</li>
-                        </ol>
-                        <p>Vom Team mitzunehmen: Fleisch, Gewürze, Wurstfüller, Werkzeuge zum Zubereiten der Bratwurst.</p>
-                        <p><strong>WO: Hirschstettner Straße 19, Block A</strong></p>
-                        <h4 style="color: #005F2F">!!!! ACHTUNG !!!!</h4>
-                        <p>Separate Anmeldung zum abendlichen traditionellen sautanz</p>
-                        <p>Mitglieder 35€<br>NICHT Mitglieder 45€</p>
-                        <p>Wie jedes Jahr findet ab 19 Uhr in unserem Verein (Hirschstettner Straße 19, Block A) unser traditionelles sautanz mit der Tisza Tambura Musikband, Programm, hausgemachter Bratwurst, Reiswurst, geschmortem Sauerkraut und Brot statt.</p>
-                    </div>
-
-                    <div style="background: #fff3e0;padding: 20px;border-radius: 8px;text-align: center;margin: 20px 0">
-                        <h3 style="color: #005F2F">Ort</h3>
-                        <p><strong>Hirschstettner Straße 19, Block A</strong></p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5313.88658301842!2d16.449463293789574!3d48.246219069483324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d06b3af8f19ef%3A0x17f111c02c0e3db2!2sHirschstettner%20Str.%2019%2C%201220%20Wien!5e0!3m2!1sen!2sat!4v1758980873443!5m2!1sen!2sat" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-
-                    <div style="background: white;border-radius: 10px;padding: 30px;margin: 20px 0;box-shadow: 0 4px 8px rgba(0,0,0,0.1)">
-                        <h3 style="color: #005F2F;text-align: center">Szervezők</h3>
-                        <p style="text-align: center;font-size: 1.1em">BMME 1899 | Bundeskanzleramt</p>
-                    </div>
-
-                    <h3>Zukünftige Veranstaltungen</h3>
-                    <img src="assets/images/Rendezvenyek2025.jpeg" alt="2025 Events" style="max-width: 100%; height: auto;">
+                <!-- Archived Sausage-Making Competition -->
+                <div class="event-highlight">
+                    <h3>Ungarischer Bratwurst Wettbewerb in Wien</h3>
+                    <p>Einblick in die Jahrhunderte alte Tradition:</p>
+                    <p>Vorab ein kleiner Einblick in die Jahrhunderte alte ungarische Tradition. Zu Beginn der Adventszeit, gibt es seit Jahrhunderten ein Fest der Landbewohner mit ihren Familien und Freunden in Ungarn. Bei diesem Fest geht es hauptsächlich um das Schlachten und Verarbeiten der selbst aufgezogenen Schweine. Mit diesem Fest, das es jedes Jahr um dieselbe Zeit gibt, soll das zukünftige Weihnachtsfest sichergestellt werden. Traditionell wird der Tag, an dem die Verarbeitung stattfindet, mit einem guten selbst gebrannten ungarischen Schnaps begrüßt. Nachdem Begrüßungsschnaps beginnen sie mit der Verarbeitung des Schweines, zerlegen das Fleisch in Teile, bereiten Bratwurst, Reiswurst, Salami, Presswurst und andere Köstlichkeiten.</p>
+                    <p>Wir als BMME und Vertreter der ungarischen Kultur möchten eine kleine Version dieser uralten Tradition veranstalten und sie an diejenigen nahebringen, die besonderes Interesse an der ungarischen Tradition und Kultur haben.</p>
                 </div>
             </section>
 
@@ -741,6 +592,20 @@
                     <p>In unserem Vereinshaus (1220 Hirschstettner Straße 19 Block A 3. Stock) finden monatlich regelmäßig Treffen statt!</p>
                     <p>Neben thematischen Abenden wie Weihnachtsfeier, Mutter- und Frauentag, Operetten-Gala, Sauessen organisieren wir auch musikalische, tanzende Unterhaltungen, die großes Interesse finden. Seit 2010 organisieren wir jährlich regelmäßig das zweifellos beliebteste und größte Event unseres Vereins, das "Gulaschfestival"! Das Wesen und Ziel des Festivals ist die Vorstellung des traditionellen ungarischen Rindergulaschs bzw. der ungarischen Küche an die junge Generation sowie mit der Gastronomiekultur anderer Nationen.</p>
                     <p>Hier im Ungarischen Haus findet jeder arbeitende Mensch ein Zuhause, der sich entspannen möchte und den ungarischen Elan erleben möchte. Schließe dich uns auch an!</p>
+                </div>
+
+                <!-- Archive Event Information -->
+                <div class="event-highlight">
+                    <h3>Sautanz – 6. Dezember 2025</h3>
+                    <p>Am 6. Dezember laden wir unsere Gäste zu einem traditionellen Sautanz-Abend ein. Die Tisza Tambura Band sorgt für die musikalische Unterhaltung, während wir ungarische Köstlichkeiten genießen können. Anmeldungen bei László Kancsár bis November 20: +43 699 1909 2586.</p>
+                </div>
+
+                <!-- Archived Sausage-Making Competition -->
+                <div class="event-highlight">
+                    <h3>Ungarischer Bratwurst Wettbewerb in Wien</h3>
+                    <p>Einblick in die Jahrhunderte alte Tradition:</p>
+                    <p>Vorab ein kleiner Einblick in die Jahrhunderte alte ungarische Tradition. Zu Beginn der Adventszeit, gibt es seit Jahrhunderten ein Fest der Landbewohner mit ihren Familien und Freunden in Ungarn. Bei diesem Fest geht es hauptsächlich um das Schlachten und Verarbeiten der selbst aufgezogenen Schweine. Mit diesem Fest, das es jedes Jahr um dieselbe Zeit gibt, soll das zukünftige Weihnachtsfest sichergestellt werden. Traditionell wird der Tag, an dem die Verarbeitung stattfindet, mit einem guten selbst gebrannten ungarischen Schnaps begrüßt. Nachdem Begrüßungsschnaps beginnen sie mit der Verarbeitung des Schweines, zerlegen das Fleisch in Teile, bereiten Bratwurst, Reiswurst, Salami, Presswurst und andere Köstlichkeiten.</p>
+                    <p>Wir als BMME und Vertreter der ungarischen Kultur möchten eine kleine Version dieser uralten Tradition veranstalten und sie an diejenigen nahebringen, die besonderes Interesse an der ungarischen Tradition und Kultur haben.</p>
                 </div>
             </section>
         </section>

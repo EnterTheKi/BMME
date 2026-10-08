@@ -21,261 +21,83 @@
         <nav>
             <ul>
                 <li><a href="#home" class="nav-link active">Kezdőlap</a></li>
-                <li><a href="#about" class="nav-link">Rólunk</a></li>
+                <li><a href="#event" class="nav-link">Következő esemény</a></li>
                 <li><a href="#gallery" class="nav-link">Galéria</a></li>
-                <li><a href="#events" class="nav-link">Események</a></li>
+                <li><a href="#videos" class="nav-link">Videók</a></li>
                 <li><a href="#archive" class="nav-link">Archívum</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Hungarian Content -->
+        <!-- ===================== HUNGARIAN CONTENT ===================== -->
         <section id="hu-content">
+
             <!-- Home Section -->
             <section id="home" class="content-section">
                 <h2>Bécsi Magyar Munkás Egyesület (BMME)</h2>
                 <p>
-                    Üdvözöljük a Bécsi Magyar Munkás Egyesület (BMME) honlapján! Ausztria egyik legrégebbi magyar egyesületeként 
-                    1899 óta szolgáljuk a bécsi magyar közösséget. 2019-ben ünnepeltük 120. évfordulónkat, és azóta is hűek maradtunk 
-                    küldetésünkhöz: a magyar nyelv, kultúra és hagyományok ápolásához. Jelenleg mintegy 300 aktív tagunk van, 
-                    akik havi rendszerességgel 80-90 baráttal találkoznak székházunkban, 
-                    a Hirschstettnerstrasse 19-ben. Itt, a "magyar házban" otthonra lelhet minden dolgozó ember, aki kikapcsolódásra 
-                    vágyik, és a magyar virtust szeretné átélni.
+                    Üdvözöljük a Bécsi Magyar Munkás Egyesület (BMME) honlapján! Ausztria egyik legrégebbi magyar egyesületeként
+                    1899 óta szolgáljuk a bécsi magyar közösséget. 2019-ben ünnepeltük 120. évfordulónkat, és azóta is hűek maradtunk
+                    küldetésünkhöz: a magyar nyelv, kultúra és hagyományok ápolásához.
                 </p>
-                <img src="assets/images/BMMEmain.jpg" alt="BMME Main" class="main-image">
-                <div class="slideshow" data-current-slide="0">
-                    <button class="slide-btn left-btn" id="left-btn"><</button>
-                    <button class="slide-btn right-btn" id="right-btn">></button>
-                    <div class="slides-container">
-                        <img src="assets/images/bmme2.jpg" alt="BMME 2" class="slide">
-                        <img src="assets/images/bmme3.jpg" alt="BMME 3" class="slide">
-                        <img src="assets/images/bmme4.jpg" alt="BMME 4" class="slide">
-                        <img src="assets/images/bmme5.jpg" alt="BMME 5" class="slide">
-                        <img src="assets/images/bmme6.jpg" alt="BMME 6" class="slide">
-                        <img src="assets/images/bmme7.jpg" alt="BMME 7" class="slide">
-                        <img src="assets/images/bmme8.jpg" alt="BMME 8" class="slide">
-                        <!-- Duplicate slides for seamless looping -->
-                        <img src="assets/images/bmme2.jpg" alt="BMME 2" class="slide">
-                        <img src="assets/images/bmme3.jpg" alt="BMME 3" class="slide">
-                        <img src="assets/images/bmme4.jpg" alt="BMME 4" class="slide">
-                        <img src="assets/images/bmme5.jpg" alt="BMME 5" class="slide">
-                        <img src="assets/images/bmme6.jpg" alt="BMME 6" class="slide">
-                        <img src="assets/images/bmme7.jpg" alt="BMME 7" class="slide">
-                        <img src="assets/images/bmme8.jpg" alt="BMME 8" class="slide">
-                    </div>
-                </div>
-
-                <!-- New Poster -->
-                <img src="assets/images/sz1.jpg" alt="New Poster" style="max-width: 100%; height: auto; margin: 20px 0; border-radius: 8px;">
-
+                <img src="assets/images/BMMEmain.jpg" alt="BMME" class="main-image">
             </section>
 
-            <!-- About Us Section -->
-            <section id="about" class="content-section">
-                <h2>Rólunk</h2>
-                <p>
-                    A BMME több mint egy egyesület – egy valódi közösség, ahol a magyar hagyományok és a barátság találkoznak.
-                    Székházunk rendezvényterme ideális helyszín 80-90 fős összejövetelekhez, és rendszerint teltházas eseményeket
-                    tartunk. Egy 6-7 fős csapat fáradhatatlanul dolgozik, hogy minden találkozó felejthetetlen
-                    legyen. Legyen szó gulyásfőző versenyről – ahol a Szolnoki Gulyásfesztiválon harmadik helyet értünk el – vagy egy
-                    nagyszabású Gulaschfestivalról a Donauparkban, nálunk a gasztronómia és a zene mindig kéz a kézben jár.
-                    "Azért csináljuk, mert szeretjük" – vallja Kancsár László, és ez az elhivatottság tartja életben a BMME szellemét.
-                </p>
+            <!-- Featured Event Section (Kolbásztöltő verseny) -->
+            <section id="event" class="content-section">
+                <h2>Következő esemény: Magyar kolbászkészítő verseny</h2>
 
-                <!-- Membership Information -->
-                <div style="background: #f0f8ff; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #005F2F;">
-                    <h3>Hogyan lehet tagunk?</h3>
-                    <p>Tagunk lenni egyszerű! Töltsd ki a belépési nyilatkozatot (tagsági kérelmet) és fizess tagsági díjat.</p>
+                <img src="assets/images/disz2/dt1.jpg" alt="Kolbásztöltő verseny plakát" class="event-poster">
 
-                    <h4>Tagsági díj:</h4>
-                    <ul>
-                        <li>Első alkalommal: <strong>45€</strong></li>
-                        <li>Minden további évre: <strong>30€/év</strong></li>
-                    </ul>
-
-                    <p style="margin-top: 15px;"><a href="assets/pdfs/Belépési nyilatkozat.pdf" download class="cta-button">Töltsd le a tagsági kérelmet!</a></p>
+                <div class="event-info-board">
+                    <h3>Jelentkezési lap / Anmeldeformular</h3>
+                    <p class="event-line"><strong>Helyszín:</strong> Hirschstettnerstraße 19, Block A, Bécs</p>
+                    <p class="event-line"><strong>Gyülekező:</strong> 07:00&ndash;08:00 &nbsp;|&nbsp; <strong>Kezdés:</strong> 08:00</p>
+                    <p class="event-line"><strong>Elkészítési idő vége:</strong> 13:00 &nbsp;|&nbsp; <strong>Eredményhirdetés:</strong> 14:00&ndash;15:00</p>
+                    <p class="event-line"><strong>Nevezési díj:</strong> 30&nbsp;€ / csapat</p>
+                    <p class="event-line"><strong>A nevezési díj tartalmazza:</strong> Sörpad garnitúra, 3 &times; 3 méteres pavilon, sütőhely.</p>
+                    <p class="event-line"><strong>Amit a csapat hoz:</strong> hús, fűszerek, kolbásztöltő és a kolbász elkészítéséhez szükséges eszközök.</p>
+                    <a href="assets/pdfs/featured/Anmeldeformular Kolbásztöltö.pdf" download class="cta-button">&#128230; Jelentkezési lap letöltése (PDF)</a>
                 </div>
 
-                <a href="assets/pdfs/Belépési nyilatkozat.pdf" download class="cta-button">Tagosodj!</a>
+                <div class="event-note">
+                    <p><strong>FIGYELEM &ndash; KÜLÖN JELENTKEZÉS SZÜKSÉGES!</strong></p>
+                    <p>A kolbászkészítő versenyre való jelentkezés <em>nem</em> érvényes automatikusan az esti rendezvényre.
+                    Több információ az esti disznótoros vacsorához:
+                    <a href="https://www.facebook.com/VereinBMME" target="_blank" rel="noopener">https://www.facebook.com/VereinBMME</a></p>
+                </div>
             </section>
 
-            <!-- Gallery Section -->
+            <!-- Gallery Section (disz2 swipe slider) -->
             <section id="gallery" class="content-section">
                 <h2>Galéria</h2>
-                <p>
-                    Tekintse meg képeinket korábbi rendezvényeinkről, ahol a magyar virtus és a közösségi öröm mindig főszerepet kapott!
-                    <a href="https://gulaschfestival.com/gulasch-2024/" target="_blank">További képek a gulyásfesztiválunkról</a>
-                </p>
-                <div class="gallery" style="margin-bottom: 20px;">
-                    <img src="assets/images/bmme2.jpg" alt="BMME 2" class="gallery-img">
-                    <img src="assets/images/bmme3.jpg" alt="BMME 3" class="gallery-img">
-                    <img src="assets/images/bmme4.jpg" alt="BMME 4" class="gallery-img">
-                    <div id="hu-gallery-expanded" style="display: none;">
-                        <img src="assets/images/bmme5.jpg" alt="BMME 5" class="gallery-img">
-                        <img src="assets/images/bmme6.jpg" alt="BMME 6" class="gallery-img">
-                        <img src="assets/images/bmme7.jpg" alt="BMME 7" class="gallery-img">
-                        <img src="assets/images/bmme8.jpg" alt="BMME 8" class="gallery-img">
-                        <img src="assets/images/kolbasztolto_de.jpeg" alt="Kolbasztolto DE" class="gallery-img">
-                        <img src="assets/images/kolbasztolto_hu.jpeg" alt="Kolbasztolto HU" class="gallery-img">
-                        <img src="assets/images/Rendezvenyek2025.jpeg" alt="2025 Events" class="gallery-img">
-                        <img src="assets/images/sz1.jpg" alt="Új plakát" class="gallery-img">
-
-                        <img src="assets/images/disznotoros/btt.jpg" alt="Tambura 1" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt2.jpg" alt="Tambura 2" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt3.jpg" alt="Tambura 3" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt4.jpg" alt="Tambura 4" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt5.jpg" alt="Tambura 5" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt6.jpg" alt="Tambura 6" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt7.jpg" alt="Tambura 7" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt8.jpg" alt="Tambura 8" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt9.jpg" alt="Tambura 9" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt10.jfif" alt="Tambura 10" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt11.jpg" alt="Tambura 11" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt12.jpg" alt="Tambura 12" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt13.jpg" alt="Tambura 13" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt14.jpg" alt="Tambura 14" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt15.jpg" alt="Tambura 15" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt16.jpg" alt="Tambura 16" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt17.jpg" alt="Tambura 17" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt1.jpeg" alt="Disznotoros 1" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt2.jpeg" alt="Disznotoros 2" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt3.jpeg" alt="Disznotoros 3" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt4.jpeg" alt="Disznotoros 4" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt5.jpeg" alt="Disznotoros 5" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt6.jpeg" alt="Disznotoros 6" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt7.jpeg" alt="Disznotoros 7" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt8.jpeg" alt="Disznotoros 8" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt9.jpeg" alt="Disznotoros 9" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt10.jpeg" alt="Disznotoros 10" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt11.jpeg" alt="Disznotoros 11" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt12.jpeg" alt="Disznotoros 12" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt13.jpeg" alt="Disznotoros 13" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt14.jpeg" alt="Disznotoros 14" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt15.jpeg" alt="Disznotoros 15" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt16.jpeg" alt="Disznotoros 16" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt17.jpeg" alt="Disznotoros 17" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt18.jpeg" alt="Disznotoros 18" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt19.jpeg" alt="Disznotoros 19" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt20.jpeg" alt="Disznotoros 20" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt21.jpeg" alt="Disznotoros 21" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt22.jpeg" alt="Disznotoros 22" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt23.jpeg" alt="Disznotoros 23" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt24.jpeg" alt="Disznotoros 24" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt25.jpeg" alt="Disznotoros 25" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt26.jpeg" alt="Disznotoros 26" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt27.jpeg" alt="Disznotoros 27" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt28.jpeg" alt="Disznotoros 28" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt29.jpeg" alt="Disznotoros 29" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt30.jpeg" alt="Disznotoros 30" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt31.jpeg" alt="Disznotoros 31" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt32.jpeg" alt="Disznotoros 32" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt33.jpeg" alt="Disznotoros 33" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt34.jpeg" alt="Disznotoros 34" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt35.jpeg" alt="Disznotoros 35" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt36.jpeg" alt="Disznotoros 36" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt37.jpeg" alt="Disznotoros 37" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt38.jpeg" alt="Disznotoros 38" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt39.jpeg" alt="Disznotoros 39" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt40.jpeg" alt="Disznotoros 40" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt41.jpeg" alt="Disznotoros 41" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt42.jpeg" alt="Disznotoros 42" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt43.jpeg" alt="Disznotoros 43" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt44.jpeg" alt="Disznotoros 44" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt45.jpeg" alt="Disznotoros 45" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt46.jpeg" alt="Disznotoros 46" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt47.jpeg" alt="Disznotoros 47" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt48.jpeg" alt="Disznotoros 48" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt49.jpeg" alt="Disznotoros 49" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt50.jpeg" alt="Disznotoros 50" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt51.jpeg" alt="Disznotoros 51" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt52.jpeg" alt="Disznotoros 52" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt53.jpeg" alt="Disznotoros 53" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt54.jpeg" alt="Disznotoros 54" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt55.jpeg" alt="Disznotoros 55" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt56.jpeg" alt="Disznotoros 56" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt57.jpeg" alt="Disznotoros 57" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt58.jpeg" alt="Disznotoros 58" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt59.jpeg" alt="Disznotoros 59" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt60.jpeg" alt="Disznotoros 60" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt61.jpeg" alt="Disznotoros 61" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt62.jpeg" alt="Disznotoros 62" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt63.jpeg" alt="Disznotoros 63" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt64.jpeg" alt="Disznotoros 64" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt65.jpeg" alt="Disznotoros 65" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt66.jpeg" alt="Disznotoros 66" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt67.jpeg" alt="Disznotoros 67" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt68.jpeg" alt="Disznotoros 68" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt69.jpeg" alt="Disznotoros 69" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt70.jpeg" alt="Disznotoros 70" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt71.jpeg" alt="Disznotoros 71" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt72.jpeg" alt="Disznotoros 72" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt73.jpeg" alt="Disznotoros 73" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt74.jpeg" alt="Disznotoros 74" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt75.jpeg" alt="Disznotoros 75" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt76.jpeg" alt="Disznotoros 76" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt77.jpeg" alt="Disznotoros 77" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt78.jpeg" alt="Disznotoros 78" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt79.jpeg" alt="Disznotoros 79" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt80.jpeg" alt="Disznotoros 80" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt81.jpeg" alt="Disznotoros 81" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt82.jpeg" alt="Disznotoros 82" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt83.jpeg" alt="Disznotoros 83" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt84.jpeg" alt="Disznotoros 84" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt85.jpeg" alt="Disznotoros 85" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt86.jpeg" alt="Disznotoros 86" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt87.jpeg" alt="Disznotoros 87" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt88.jpeg" alt="Disznotoros 88" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt89.jpeg" alt="Disznotoros 89" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt90.jpeg" alt="Disznotoros 90" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt91.jpeg" alt="Disznotoros 91" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt92.jpeg" alt="Disznotoros 92" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt93.jpeg" alt="Disznotoros 93" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt94.jpeg" alt="Disznotoros 94" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt95.jpeg" alt="Disznotoros 95" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt96.jpeg" alt="Disznotoros 96" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt97.jpeg" alt="Disznotoros 97" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt98.jpeg" alt="Disznotoros 98" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt99.jpeg" alt="Disznotoros 99" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt100.jpeg" alt="Disznotoros 100" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt101.jpeg" alt="Disznotoros 101" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt102.jpeg" alt="Disznotoros 102" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt103.jpeg" alt="Disznotoros 103" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt104.jpeg" alt="Disznotoros 104" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt105.jpeg" alt="Disznotoros 105" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt106.jpeg" alt="Disznotoros 106" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt107.jpeg" alt="Disznotoros 107" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt108.jpeg" alt="Disznotoros 108" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt109.jpeg" alt="Disznotoros 109" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt110.jpeg" alt="Disznotoros 110" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt111.jpeg" alt="Disznotoros 111" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt112.jpeg" alt="Disznotoros 112" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt113.jpeg" alt="Disznotoros 113" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt114.jpeg" alt="Disznotoros 114" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt115.jpeg" alt="Disznotoros 115" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt116.jpeg" alt="Disznotoros 116" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt117.jpeg" alt="Disznotoros 117" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt118.jpeg" alt="Disznotoros 118" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt119.jpeg" alt="Disznotoros 119" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt120.jpeg" alt="Disznotoros 120" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt121.jpeg" alt="Disznotoros 121" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt122.jpeg" alt="Disznotoros 122" class="gallery-img">
+                <p>Nézze meg a kolbásztöltő versenyről készült képeinket &ndash; húzza oldalra a(swipe) vagy használja a nyilakat!</p>
+                <div class="disz2-slider" id="disz2-slider-hu">
+                    <button class="slider-btn slider-prev" aria-label="Előző">&lsaquo;</button>
+                    <div class="slider-viewport">
+                        <div class="slider-track">
+                            <!-- 60 disz2 images generated by script.js -->
+                        </div>
                     </div>
+                    <button class="slider-btn slider-next" aria-label="Következő">&rsaquo;</button>
+                    <div class="slider-counter"></div>
                 </div>
-                <button id="hu-gallery-toggle" class="gallery-toggle-btn">Több megjelenítése</button>
-
-            <!-- Events Section -->
-            <section id="events" class="content-section">
-                <h2>Jövőbeli Események</h2>
-
-                <p>
-                    2025-ben is izgalmas programokkal várjuk barátainkat! A részvétel tagoknak 35 €, nem tagoknak 45 €, ami egy
-                    négyfogásos vacsorát és egy üdvözlő italt foglal magában. Jegyeinket érdemes időben lefoglalni, mert gyorsan
-                    elfogynak!
-                </p>
-
             </section>
 
+            <!-- Videos Section -->
+            <section id="videos" class="content-section">
+                <h2>Videók</h2>
+                <div class="video-grid">
+                    <video class="video-item" src="assets/videos/vid (1).mp4" controls preload="metadata"></video>
+                    <video class="video-item" src="assets/videos/vid (4).mp4" controls preload="metadata"></video>
+                    <video class="video-item" src="assets/videos/vid (5).mp4" controls preload="metadata"></video>
+                    <video class="video-item" src="assets/videos/vid (6).mp4" controls preload="metadata"></video>
+                    <video class="video-item" src="assets/videos/vid (7).mp4" controls preload="metadata"></video>
+                </div>
+            </section>
+
+            <!-- Archive Section -->
             <section id="archive" class="content-section">
                 <h2>Archívum</h2>
                 <p>
@@ -315,264 +137,72 @@
             </section>
         </section>
 
-        <!-- German Content -->
+        <!-- ===================== GERMAN CONTENT ===================== -->
         <section id="de-content" style="display: none;">
+
             <!-- Home Section -->
             <section id="home-de" class="content-section">
                 <h2>Bécsi Magyar Munkás Egyesület (BMME)</h2>
                 <p>
-                    Willkommen auf der Website des Wiener Ungarischen Arbeitervereins (BMME)! Als einer der ältesten ungarischen 
-                    Vereine Österreichs dienen wir seit 1899 der ungarischen Gemeinschaft in Wien. 2019 feierten wir unser 120-jähriges 
-                    Jubiläum und bleiben unserer Mission treu: die Pflege der ungarischen Sprache, Kultur und Traditionen. Mit etwa 
-                    300 aktiven Mitgliedern kommen monatlich 80-90 Freunde in 
-                    unserem Vereinshaus in der Hirschstettnerstrasse 19 zusammen. Hier, im „ungarischen Haus“, finden arbeitende Menschen 
-                    Entspannung und erleben ungarische Lebensfreude.
+                    Willkommen auf der Website des Wiener Ungarischen Arbeitervereins (BMME)! Als einer der ältesten ungarischen
+                    Vereine Österreichs dienen wir seit 1899 der ungarischen Gemeinschaft in Wien. 2019 feierten wir unser 120-jähriges
+                    Jubiläum und bleiben unserer Mission treu: die Pflege der ungarischen Sprache, Kultur und Traditionen.
                 </p>
-                <img src="assets/images/BMMEmain.jpg" alt="BMME Main" class="main-image">
-                <div class="slideshow" data-current-slide="0">
-                    <button class="slide-btn left-btn left-btn-de"><</button>
-                    <button class="slide-btn right-btn right-btn-de">></button>
-                    <div class="slides-container">
-                        <img src="assets/images/bmme2.jpg" alt="BMME 2" class="slide">
-                        <img src="assets/images/bmme3.jpg" alt="BMME 3" class="slide">
-                        <img src="assets/images/bmme4.jpg" alt="BMME 4" class="slide">
-                        <img src="assets/images/bmme5.jpg" alt="BMME 5" class="slide">
-                        <img src="assets/images/bmme6.jpg" alt="BMME 6" class="slide">
-                        <img src="assets/images/bmme7.jpg" alt="BMME 7" class="slide">
-                        <img src="assets/images/bmme8.jpg" alt="BMME 8" class="slide">
-                        <!-- Duplicate slides for seamless looping -->
-                        <img src="assets/images/bmme2.jpg" alt="BMME 2" class="slide">
-                        <img src="assets/images/bmme3.jpg" alt="BMME 3" class="slide">
-                        <img src="assets/images/bmme4.jpg" alt="BMME 4" class="slide">
-                        <img src="assets/images/bmme5.jpg" alt="BMME 5" class="slide">
-                        <img src="assets/images/bmme6.jpg" alt="BMME 6" class="slide">
-                        <img src="assets/images/bmme7.jpg" alt="BMME 7" class="slide">
-                        <img src="assets/images/bmme8.jpg" alt="BMME 8" class="slide">
-                    </div>
-                </div>
-
-                <!-- New Poster -->
-                <img src="assets/images/sz1.jpg" alt="New Poster" style="max-width: 100%; height: auto; margin: 20px 0; border-radius: 8px;">
+                <img src="assets/images/BMMEmain.jpg" alt="BMME" class="main-image">
             </section>
 
-            <!-- About Us Section -->
-            <section id="about-de" class="content-section">
-                <h2>Über Uns</h2>
-                <p>
-                    Der BMME ist mehr als ein Verein – er ist eine echte Gemeinschaft, in der ungarische Traditionen und Freundschaft
-                    zusammentreffen. Unser Veranstaltungsraum ist ideal für 80-90 Personen und meist ausgebucht. Ein 6-7-köpfiges Team arbeiten unermüdlich, um jede Veranstaltung unvergesslich zu machen. Ob ein Gulaschwettbewerb –
-                    bei dem wir beim Szolnoker Gulyásfestival den dritten Platz erreichten – oder das große Gulaschfest im Donaupark,
-                    bei uns gehen Gastronomie und Musik Hand in Hand. "Wir machen es, weil wir es lieben", sagt László Kancsár, und diese
-                    Leidenschaft hält den BMME-Geist am Leben.
-                </p>
+            <!-- Featured Event Section (Bratwurst-Wettbewerb) -->
+            <section id="event-de" class="content-section">
+                <h2>Nächste Veranstaltung: Ungarischer Bratwurst-Wettbewerb</h2>
 
-                <!-- Membership Information -->
-                <div style="background: #f0f8ff; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #005F2F;">
-                    <h3>Wie kann man Mitglied werden?</h3>
-                    <p>Es ist einfach, unser Mitglied zu werden! Füllen Sie das Beitrittsformular aus und zahlen Sie den Mitgliedsbeitrag.</p>
+                <img src="assets/images/disz2/dt1.jpg" alt="Plakat Bratwurst-Wettbewerb" class="event-poster">
 
-                    <h4>Mitgliedsbeitrag:</h4>
-                    <ul>
-                        <li>Erstmals: <strong>45€</strong></li>
-                        <li>Für jedes weitere Jahr: <strong>30€/Jahr</strong></li>
-                    </ul>
-
-                    <p style="margin-top: 15px;"><a href="assets/pdfs/Belépési nyilatkozat.pdf" download class="cta-button">Laden Sie das Beitrittsformular herunter!</a></p>
+                <div class="event-info-board">
+                    <h3>Jelentkezési lap / Anmeldeformular</h3>
+                    <p class="event-line"><strong>Veranstaltungsort:</strong> Hirschstettnerstraße 19, Block A, Wien</p>
+                    <p class="event-line"><strong>Eintreffen:</strong> 07:00&ndash;08:00 Uhr &nbsp;|&nbsp; <strong>Start:</strong> 08:00 Uhr</p>
+                    <p class="event-line"><strong>Ende der Zubereitung:</strong> 13:00 Uhr &nbsp;|&nbsp; <strong>Preisverleihung:</strong> 14:00&ndash;15:00 Uhr</p>
+                    <p class="event-line"><strong>Anmeldegebühr:</strong> 30&nbsp;€ pro Team</p>
+                    <p class="event-line"><strong>In der Anmeldegebühr enthalten:</strong> Heurigengarnitur, 3 &times; 3 Meter Partyzelt, Platz zum Braten.</p>
+                    <p class="event-line"><strong>Vom Team mitzubringen:</strong> Fleisch, Gewürze, Wurstfüller und Werkzeuge zur Zubereitung der Bratwurst.</p>
+                    <a href="assets/pdfs/featured/Anmeldeformular Kolbásztöltö.pdf" download class="cta-button">&#128230; Anmeldeformular herunterladen (PDF)</a>
                 </div>
 
-                <a href="#events-de" class="cta-button">Schließen Sie sich uns an!</a>
+                <div class="event-note">
+                    <p><strong>ACHTUNG &ndash; SEPARATE ANMELDUNG ERFORDERLICH!</strong></p>
+                    <p>Die Anmeldung zum Bratwurst-Wettbewerb gilt <em>nicht</em> automatisch für die Abendveranstaltung.
+                    Mehr Information zur Abendveranstaltung (Sautanz):
+                    <a href="https://www.facebook.com/VereinBMME" target="_blank" rel="noopener">https://www.facebook.com/VereinBMME</a></p>
+                </div>
             </section>
 
-            <!-- Gallery Section -->
+            <!-- Gallery Section (disz2 swipe slider) -->
             <section id="gallery-de" class="content-section">
                 <h2>Galerie</h2>
-                <p>
-                    Schauen Sie sich Bilder von unseren früheren Veranstaltungen an, bei denen ungarischer Elan und gemeinschaftliche
-                    Freude im Mittelpunkt standen!
-                    <a href="https://gulaschfestival.com/gulasch-2024/" target="_blank">Mehr Bilder vom Gulaschfestival</a>
-                </p>
-                <div class="gallery">
-                    <img src="assets/images/bmme2.jpg" alt="BMME 2" class="gallery-img">
-                    <img src="assets/images/bmme3.jpg" alt="BMME 3" class="gallery-img">
-                    <img src="assets/images/bmme4.jpg" alt="BMME 4" class="gallery-img">
-                    <div id="de-gallery-expanded" style="display: none;">
-                        <img src="assets/images/bmme5.jpg" alt="BMME 5" class="gallery-img">
-                        <img src="assets/images/bmme6.jpg" alt="BMME 6" class="gallery-img">
-                        <img src="assets/images/bmme7.jpg" alt="BMME 7" class="gallery-img">
-                        <img src="assets/images/bmme8.jpg" alt="BMME 8" class="gallery-img">
-                        <img src="assets/images/kolbasztolto_de.jpeg" alt="Kolbasztolto DE" class="gallery-img">
-                        <img src="assets/images/kolbasztolto_hu.jpeg" alt="Kolbasztolto HU" class="gallery-img">
-                        <img src="assets/images/Rendezvenyek2025.jpeg" alt="2025 Events" class="gallery-img">
-                        <img src="assets/images/sz1.jpg" alt="Neues Poster" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt.jpg" alt="Tambura 1" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt2.jpg" alt="Tambura 2" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt3.jpg" alt="Tambura 3" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt4.jpg" alt="Tambura 4" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt5.jpg" alt="Tambura 5" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt6.jpg" alt="Tambura 6" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt7.jpg" alt="Tambura 7" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt8.jpg" alt="Tambura 8" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt9.jpg" alt="Tambura 9" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt10.jfif" alt="Tambura 10" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt11.jpg" alt="Tambura 11" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt12.jpg" alt="Tambura 12" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt13.jpg" alt="Tambura 13" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt14.jpg" alt="Tambura 14" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt15.jpg" alt="Tambura 15" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt16.jpg" alt="Tambura 16" class="gallery-img">
-                        <img src="assets/images/disznotoros/btt17.jpg" alt="Tambura 17" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt1.jpeg" alt="Disznotoros 1" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt2.jpeg" alt="Disznotoros 2" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt3.jpeg" alt="Disznotoros 3" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt4.jpeg" alt="Disznotoros 4" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt5.jpeg" alt="Disznotoros 5" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt6.jpeg" alt="Disznotoros 6" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt7.jpeg" alt="Disznotoros 7" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt8.jpeg" alt="Disznotoros 8" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt9.jpeg" alt="Disznotoros 9" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt10.jpeg" alt="Disznotoros 10" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt11.jpeg" alt="Disznotoros 11" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt12.jpeg" alt="Disznotoros 12" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt13.jpeg" alt="Disznotoros 13" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt14.jpeg" alt="Disznotoros 14" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt15.jpeg" alt="Disznotoros 15" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt16.jpeg" alt="Disznotoros 16" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt17.jpeg" alt="Disznotoros 17" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt18.jpeg" alt="Disznotoros 18" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt19.jpeg" alt="Disznotoros 19" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt20.jpeg" alt="Disznotoros 20" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt21.jpeg" alt="Disznotoros 21" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt22.jpeg" alt="Disznotoros 22" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt23.jpeg" alt="Disznotoros 23" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt24.jpeg" alt="Disznotoros 24" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt25.jpeg" alt="Disznotoros 25" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt26.jpeg" alt="Disznotoros 26" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt27.jpeg" alt="Disznotoros 27" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt28.jpeg" alt="Disznotoros 28" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt29.jpeg" alt="Disznotoros 29" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt30.jpeg" alt="Disznotoros 30" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt31.jpeg" alt="Disznotoros 31" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt32.jpeg" alt="Disznotoros 32" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt33.jpeg" alt="Disznotoros 33" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt34.jpeg" alt="Disznotoros 34" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt35.jpeg" alt="Disznotoros 35" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt36.jpeg" alt="Disznotoros 36" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt37.jpeg" alt="Disznotoros 37" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt38.jpeg" alt="Disznotoros 38" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt39.jpeg" alt="Disznotoros 39" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt40.jpeg" alt="Disznotoros 40" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt41.jpeg" alt="Disznotoros 41" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt42.jpeg" alt="Disznotoros 42" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt43.jpeg" alt="Disznotoros 43" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt44.jpeg" alt="Disznotoros 44" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt45.jpeg" alt="Disznotoros 45" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt46.jpeg" alt="Disznotoros 46" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt47.jpeg" alt="Disznotoros 47" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt48.jpeg" alt="Disznotoros 48" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt49.jpeg" alt="Disznotoros 49" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt50.jpeg" alt="Disznotoros 50" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt51.jpeg" alt="Disznotoros 51" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt52.jpeg" alt="Disznotoros 52" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt53.jpeg" alt="Disznotoros 53" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt54.jpeg" alt="Disznotoros 54" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt55.jpeg" alt="Disznotoros 55" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt56.jpeg" alt="Disznotoros 56" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt57.jpeg" alt="Disznotoros 57" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt58.jpeg" alt="Disznotoros 58" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt59.jpeg" alt="Disznotoros 59" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt60.jpeg" alt="Disznotoros 60" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt61.jpeg" alt="Disznotoros 61" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt62.jpeg" alt="Disznotoros 62" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt63.jpeg" alt="Disznotoros 63" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt64.jpeg" alt="Disznotoros 64" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt65.jpeg" alt="Disznotoros 65" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt66.jpeg" alt="Disznotoros 66" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt67.jpeg" alt="Disznotoros 67" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt68.jpeg" alt="Disznotoros 68" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt69.jpeg" alt="Disznotoros 69" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt70.jpeg" alt="Disznotoros 70" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt71.jpeg" alt="Disznotoros 71" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt72.jpeg" alt="Disznotoros 72" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt73.jpeg" alt="Disznotoros 73" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt74.jpeg" alt="Disznotoros 74" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt75.jpeg" alt="Disznotoros 75" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt76.jpeg" alt="Disznotoros 76" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt77.jpeg" alt="Disznotoros 77" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt78.jpeg" alt="Disznotoros 78" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt79.jpeg" alt="Disznotoros 79" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt80.jpeg" alt="Disznotoros 80" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt81.jpeg" alt="Disznotoros 81" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt82.jpeg" alt="Disznotoros 82" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt83.jpeg" alt="Disznotoros 83" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt84.jpeg" alt="Disznotoros 84" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt85.jpeg" alt="Disznotoros 85" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt86.jpeg" alt="Disznotoros 86" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt87.jpeg" alt="Disznotoros 87" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt88.jpeg" alt="Disznotoros 88" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt89.jpeg" alt="Disznotoros 89" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt90.jpeg" alt="Disznotoros 90" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt91.jpeg" alt="Disznotoros 91" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt92.jpeg" alt="Disznotoros 92" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt93.jpeg" alt="Disznotoros 93" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt94.jpeg" alt="Disznotoros 94" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt95.jpeg" alt="Disznotoros 95" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt96.jpeg" alt="Disznotoros 96" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt97.jpeg" alt="Disznotoros 97" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt98.jpeg" alt="Disznotoros 98" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt99.jpeg" alt="Disznotoros 99" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt100.jpeg" alt="Disznotoros 100" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt101.jpeg" alt="Disznotoros 101" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt102.jpeg" alt="Disznotoros 102" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt103.jpeg" alt="Disznotoros 103" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt104.jpeg" alt="Disznotoros 104" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt105.jpeg" alt="Disznotoros 105" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt106.jpeg" alt="Disznotoros 106" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt107.jpeg" alt="Disznotoros 107" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt108.jpeg" alt="Disznotoros 108" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt109.jpeg" alt="Disznotoros 109" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt110.jpeg" alt="Disznotoros 110" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt111.jpeg" alt="Disznotoros 111" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt112.jpeg" alt="Disznotoros 112" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt113.jpeg" alt="Disznotoros 113" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt114.jpeg" alt="Disznotoros 114" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt115.jpeg" alt="Disznotoros 115" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt116.jpeg" alt="Disznotoros 116" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt117.jpeg" alt="Disznotoros 117" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt118.jpeg" alt="Disznotoros 118" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt119.jpeg" alt="Disznotoros 119" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt120.jpeg" alt="Disznotoros 120" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt121.jpeg" alt="Disznotoros 121" class="gallery-img">
-                        <img src="assets/images/disznotoros/dt122.jpeg" alt="Disznotoros 122" class="gallery-img">
+                <p>Sehen Sie sich unsere Fotos vom Bratwurst-Wettbewerb an &ndash; wischen Sie (swipe) oder benutzen Sie die Pfeile!</p>
+                <div class="disz2-slider" id="disz2-slider-de">
+                    <button class="slider-btn slider-prev" aria-label="Zurück">&lsaquo;</button>
+                    <div class="slider-viewport">
+                        <div class="slider-track">
+                            <!-- 60 disz2 images generated by script.js -->
+                        </div>
                     </div>
-                </div>
-                <button id="de-gallery-toggle" class="gallery-toggle-btn">Mehr anzeigen</button>
-            </section>
-
-            <!-- Events Section -->
-            <section id="events-de" class="content-section">
-                <h2>Zukünftige Veranstaltungen</h2>
-                <p>
-                    Auch 2025 erwarten unsere Freunde spannende Programme! Die Teilnahme kostet für Mitglieder 35 €, für Nicht-Mitglieder
-                    45 €, inklusive eines viergängigen Abendessens und eines Begrüßungsgetränks. Tickets sollten frühzeitig reserviert werden,
-                    da sie schnell vergriffen sind!
-                </p>
-
-                <!-- Event Highlights for German -->
-                <div class="event-highlight">
-                    <h3>Sautanz – 6. Dezember 2025</h3>
-                    <p>Am 6. Dezember laden wir unsere Gäste zu einem traditionellen Sautanz-Abend ein. Die Tisza Tambura Band sorgt für die musikalische Unterhaltung, während wir ungarische Köstlichkeiten genießen können. Anmeldungen bei László Kancsár bis November 20: +43 699 1909 2586.</p>
-                </div>
-
-                <!-- Archived Sausage-Making Competition -->
-                <div class="event-highlight">
-                    <h3>Ungarischer Bratwurst Wettbewerb in Wien</h3>
-                    <p>Einblick in die Jahrhunderte alte Tradition:</p>
-                    <p>Vorab ein kleiner Einblick in die Jahrhunderte alte ungarische Tradition. Zu Beginn der Adventszeit, gibt es seit Jahrhunderten ein Fest der Landbewohner mit ihren Familien und Freunden in Ungarn. Bei diesem Fest geht es hauptsächlich um das Schlachten und Verarbeiten der selbst aufgezogenen Schweine. Mit diesem Fest, das es jedes Jahr um dieselbe Zeit gibt, soll das zukünftige Weihnachtsfest sichergestellt werden. Traditionell wird der Tag, an dem die Verarbeitung stattfindet, mit einem guten selbst gebrannten ungarischen Schnaps begrüßt. Nachdem Begrüßungsschnaps beginnen sie mit der Verarbeitung des Schweines, zerlegen das Fleisch in Teile, bereiten Bratwurst, Reiswurst, Salami, Presswurst und andere Köstlichkeiten.</p>
-                    <p>Wir als BMME und Vertreter der ungarischen Kultur möchten eine kleine Version dieser uralten Tradition veranstalten und sie an diejenigen nahebringen, die besonderes Interesse an der ungarischen Tradition und Kultur haben.</p>
+                    <button class="slider-btn slider-next" aria-label="Weiter">&rsaquo;</button>
+                    <div class="slider-counter"></div>
                 </div>
             </section>
 
-
+            <!-- Videos Section -->
+            <section id="videos-de" class="content-section">
+                <h2>Videos</h2>
+                <div class="video-grid">
+                    <video class="video-item" src="assets/videos/vid (1).mp4" controls preload="metadata"></video>
+                    <video class="video-item" src="assets/videos/vid (4).mp4" controls preload="metadata"></video>
+                    <video class="video-item" src="assets/videos/vid (5).mp4" controls preload="metadata"></video>
+                    <video class="video-item" src="assets/videos/vid (6).mp4" controls preload="metadata"></video>
+                    <video class="video-item" src="assets/videos/vid (7).mp4" controls preload="metadata"></video>
+                </div>
+            </section>
 
             <!-- Archive Section -->
             <section id="archive-de" class="content-section">

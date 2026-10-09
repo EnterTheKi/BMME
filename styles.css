@@ -292,6 +292,20 @@ footer {
     margin-bottom: 0;
 }
 
+.poster-back-toggle {
+    text-align: center;
+    margin: 4px 0 20px;
+}
+
+.poster-back-toggle a {
+    color: #005F2F;
+    font-weight: bold;
+}
+
+.poster-back-toggle a:hover {
+    color: #b22222;
+}
+
 /* ---- Disz2 swipe slider ---- */
 .disz2-slider {
     position: relative;

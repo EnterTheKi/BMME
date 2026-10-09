@@ -88,6 +88,25 @@ function clearTimeoutSwipe(sliderEl) {
 document.querySelectorAll('.disz2-slider').forEach(buildSlider);
 
 // =========================================================
+// Poster back side toggle (di-po1 front / di-po2 back)
+// =========================================================
+function initPosterBack(langPrefix, hideText, showText) {
+    const link = document.getElementById(`${langPrefix}-poster-back-link`);
+    const back = document.getElementById(`${langPrefix}-poster-back`);
+    if (!link || !back) return;
+    // The back side is visible by default; the link lets people hide it.
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const visible = back.style.display !== 'none';
+        back.style.display = visible ? 'none' : 'block';
+        link.textContent = visible ? showText : hideText;
+    });
+}
+
+initPosterBack('hu', 'A hátoldal elrejtése', 'A plakát hátoldalának megtekintése');
+initPosterBack('de', 'Rückseite ausblenden', 'Rückseite des Plakats anzeigen');
+
+// =========================================================
 // Image modal
 // =========================================================
 let modal = document.createElement('div');

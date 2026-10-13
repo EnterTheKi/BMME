@@ -155,6 +155,15 @@ document.addEventListener('keydown', function (event) {
 });
 
 // =========================================================
+// Posters open full-screen when clicked
+// =========================================================
+document.querySelectorAll('.event-poster').forEach(function (img) {
+    img.addEventListener('click', function () {
+        openModal(this.src);
+    });
+});
+
+// =========================================================
 // Language switcher
 // =========================================================
 document.getElementById('hu-btn').addEventListener('click', function () {

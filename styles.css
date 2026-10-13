@@ -306,6 +306,32 @@ footer {
     color: #b22222;
 }
 
+/* ---- Additional event cards (Libavacsora, Szilveszter) ---- */
+.event-card {
+    margin: 30px 0 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #ddd;
+}
+
+.event-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.event-poster {
+    cursor: zoom-in;
+}
+
+.event-info-board a {
+    color: #005F2F;
+    font-weight: bold;
+}
+
+.event-info-board a:hover {
+    color: #b22222;
+}
+
 /* ---- Disz2 swipe slider ---- */
 .disz2-slider {
     position: relative;
